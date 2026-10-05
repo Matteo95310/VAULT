@@ -1,6 +1,6 @@
 Projet Flash :
 
-fait par Clerget Ewen,		,		,		.
+fait par Clerget Ewen, Fofana Assya	,		,		.
 
 L'objectif est de crée un site web interactif en HTML/CSS, SQL, PHP et JS.
 
