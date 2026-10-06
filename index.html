@@ -1,86 +1,95 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vault</title>
+    <title>Titre de ta page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<header>
-    <div>
-        <div>
-                <img src="#" alt="Logo du site">
-                <a href="#">Vault</a>
-        </div>
-
-        <div>
+<body>
+    <header class="main-padding">
+        <!-- Left part -->
+        <div class="left">
+            <div class="logo">
+                <img src="https://media.istockphoto.com/id/1201041782/fr/photo/alpaga.jpg?s=612x612&w=0&k=20&c=TGXFNwEIQUMr5Sn9UD4okCiFcEEstaziQ6lYikgtxfI=" alt="Logo" />
+                <span>VAULT</span>
+            </div> 
+            
             <nav>
                 <ul>
-                    <li><a href="#">Catalogue</a> </li>
-                    <li><a href="#">Mon Profil</a></li>
-                    <li><a href="#">Administration</a></li>
+                    <li>
+                        <a href="#" class="active">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="#">Mon profil</a>
+                    </li>
+                    <li>
+                        <a href="#">Administration</a>
+                    </li>
                 </ul>
             </nav>
         </div>
 
-        <div>
-            <input type="image" src="#" alt="Icone de Loupe">
-            <input type="text" placeholder="Rechercher film, série, jeu...">
-            <kbd>CTRL + K</kbd>
-        </div>
+        <!-- Right part -->
+        <div class="right">
+            <div>
+                <input type="image" src="#" alt="Icone de Loupe">
+                <input type="text" placeholder="Rechercher film, série, jeu...">
+                <kbd>CTRL + K</kbd>
+            </div>
 
-        <div>
-            <a href="#">Niveau et XP</a>
-        </div>
+            <div>
+                <a href="#">Niveau et XP</a>
+            </div>
 
-        <div>
-            <a href="#">Paramètres</a>
+            <div>
+                <a href="#">Paramètres</a>
+            </div>
         </div>
+    </header>
+
+    <div class="main-padding">
+        <h1>Explorez votre univers pop-culture</h1>
     </div>
-</header>
 
-<body>
-    <h1>Explorez votre univers pop-culture</h1>
+    <footer>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <span>VAULT</span>
+                    </div>
+
+                    <div>
+                        <span>// Plateforme Pop-Culture</span>
+                    </div>
+                </div>
+
+                <div>
+                    <span>Projet Web Bac+1 - 4 Sprints - Architecture native HTML/CSS/PHP/JS</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="#">Catalogue</a>
+                </div>
+                <div>
+                    a href="#">Progression</a>
+                </div>
+                <div>
+                    <a href="#">Audit & Sprints</a>
+                </div>
+                <div>
+                    <span>v1.4.0-stable</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-
-<footer>
-
-    <div>
-        <div>
-            <div>
-                <div>
-                    <span>VAULT</span>
-                </div>
-
-                <div>
-                    <span>// Plateforme Pop-Culture</span>
-                </div>
-            </div>
-
-            <div>
-                <span>Projet Web Bac+1 - 4 Sprints - Architecture native HTML/CSS/PHP/JS</span>
-            </div>
-        </div>
-        <div>
-            <div>
-                <a href="#">Catalogue</a>
-            </div>
-            <div>
-                a href="#">Progression</a>
-            </div>
-            <div>
-                <a href="#">Audit & Sprints</a>
-            </div>
-            <div>
-                <span>v1.4.0-stable</span>
-            </div>
-        </div>
-
-        
-
-    </div>
-
-</footer>
 </html>
