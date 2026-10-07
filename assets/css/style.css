@@ -1,0 +1,4 @@
+.texte-cote {
+  writing-mode: vertical-rl; /* Le texte s'écrit de haut en bas et les lignes de droite à gauche */
+  text-orientation: upright; /* Garde les lettres bien droites (optionnel) */
+}
