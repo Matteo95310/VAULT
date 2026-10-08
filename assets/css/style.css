@@ -116,12 +116,29 @@ body header .right {
 }
 
 .boite-entière {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
 }
+.boite h2 {
+    align-items: center;
+    color: yellow;
+}
+.boite p {
+    align-items: center;
+    color: white;
+}
+.stat{
+    display: flex;
+    padding: 20 px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
 
-
+.stat:nth-child{
+    align: center;
+}
 /**********************
 * BODY / Block 1
 **********************/
