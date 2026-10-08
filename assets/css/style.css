@@ -24,9 +24,18 @@ body header .left {
     align-items: center;
 }
 
+body header .right {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+}
+
+/***logo***/
+
 body header .logo {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
 }
 
@@ -38,7 +47,7 @@ body header .logo img {
 body header .logo span {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     color: #E2E2EB;
     font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
     font-weight: 700;
@@ -57,6 +66,8 @@ body header .logo span::after{
     box-shadow: 0px 0px 8px #D0BCFF;
 }
 
+/***navigation***/
+
 body header nav ul {
     display: flex;
     gap: 30px;
@@ -70,15 +81,17 @@ body header nav ul li a.profile{
     gap: 4.01px;
 
 }
+
 body header nav ul li a.profile::after{
     content: 'NIV. 2';
     color: #FFB95F;
-    font-size: 12px;
+    font-size: 10px;
     display: block;
     border-radius: 10%;
     background-color: #33343B;
-    padding: 2px 4px;
+    padding: 1.5px 4.75px;
     font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 body header nav ul li a.admin{
@@ -90,12 +103,13 @@ body header nav ul li a.admin{
 body header nav ul li a.admin::after{
     content: 'ADMIN';
     color: #C9AEFF;
-    font-size: 12px;
+    font-size: 10px;
     display: block;
     border-radius: 10%;
     background-color: #6001D1;
-    padding: 2px 4px;
+    padding: 1.5px 4px;
     font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    font-weight: 600;
     letter-spacing: 0.5px;
 }
 
@@ -103,19 +117,157 @@ body header nav a {
     color: #CBC3D7;
     text-decoration: none;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 body header nav a.active {
     color: #D0BCFF;
 }
 
-body header .right {
+/***Search bar***/
+
+body header .right .search_bar {
     display: flex;
     align-items: center;
-    color: #fff;
+    gap: 8px;
+    background-color: #191B22;
+    border-radius: 10px;
+    padding: 4px 16px;
+}
+body header .right .search_bar input[type="search"] {
+    color: #958EA0;
+    background-color: #191B22;
+    border: none;
+    min-width: 256px;
 }
 
+body header .right .search_bar input[type="search"]::placeholder {
+    content: "";
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    color: #958EA0;
+}
+
+body header .right .search_bar .shortcut{
+    display: flex;
+    align-items: center;
+    color: #958EA0;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/***exp and levels***/
+
+body header .right .exp_lvl{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #191B22;
+    border-radius: 10px;
+    padding: 5.5px 8px;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+}
+
+body header .right #level{
+    text-decoration: none;
+    color: #FFB95F;
+    font-size: 10px;
+}
+
+body header .right #level::before{
+    content: "Niv. ";
+    color: #FFB95F;
+    font-size: 10px;
+}
+
+body header .right #xp{
+    text-decoration: none;
+    color: #CBC3D7;
+    font-size: 10px;
+
+}
+
+body header .right #xp::after{
+    content: " XP";
+    color: #CBC3D7;
+    font-size: 10px;
+}
+
+body header .right .exp_lvl img{
+    height: 20px;
+    width: 20px;
+}
+
+/***profile tab***/
+
+body header .right .profile{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+}
+
+body header .right .profile img{
+    height: 32px;
+    width: 32px;
+    border-radius: 40%;
+    background-color: #D0BCFF66;
+    border-radius: 40%;
+    padding: 1px 1px;
+    box-shadow: 0px 0px 1px #D0BCFF66;
+}
 
 /**********************
 * BODY / Block 1
 **********************/
+
+/**********************
+* Footer
+**********************/
+body footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 120px;
+    background-color: #070910;
+}
+
+body footer .right nav ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+body footer .left{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #958EA0;
+}
+
+body footer .right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #958EA0;
+}
+
+body footer .footer_title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+body footer .left .footer_logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: #E2E2EB;
+}
+
+body footer .left .footer_arrangment{
+    display: flex;
+    flex-direction: column;
+}
+
