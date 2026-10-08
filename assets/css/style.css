@@ -125,33 +125,114 @@ body header .right {
 **********************/
 
 
-
-/**********************
-* HEADER/ADMIN
-**********************/
-
-
-
-body aside .left {
-    padding: 256 800px;
-    
+<!-----------------------essaie----------------------->
+* {
+    box-sizing: border-box;
 }
 
-body header .admin{
-    padding: 1024 64px;
-    color: #C9AEFF;
+body {
+    margin: 0;
+    padding: 30px;
+    background: #101118;
+    color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+.catalogue {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+}
+
+.card {
+    overflow: hidden;
+    background: #171920;
+    border-radius: 10px;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+}
+
+.info {
+    display: inline-block;
+    padding: 6px 9px;
+    background: #101117;
+    border-radius: 3px;
+    color: #ddd;
+    font: 12px monospace;
+}
+
+h2 {
+    margin: 30px 0 8px;
+    font-size: 20px;
+}
+
+p {
+    margin: 0;
+    color: #c9c5d2;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.evaluation {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    
+    align-items: center;
+    margin-top: 22px;
 
+    color: #aaa;
+    font-size: 11px;
+    font-weight: bold;
 }
 
+.stars {
+    color: #ffb43b;
+    font-size: 17px;
+}
 
+.buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+}
 
+button {
+    flex: 1;
+    height: 38px;
 
+    border: 0;
+    border-radius: 5px;
 
+    background: #303139;
+    color: #ddd;
 
+    font: 11px monospace;
+}
 
+@media (max-width: 800px) {
+    .catalogue {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media (max-width: 550px) {
+    body {
+        padding: 15px;
+    }
 
+    .catalogue {
+        grid-template-columns: 1fr;
+    }
+}
