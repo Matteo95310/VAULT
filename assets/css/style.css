@@ -115,6 +115,12 @@ body header .right {
     color: #fff;
 }
 
+.boite-entière {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
 
 /**********************
 * BODY / Block 1
