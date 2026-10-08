@@ -126,5 +126,32 @@ body header .right {
 
 
 
+/**********************
+* HEADER/ADMIN
+**********************/
+
+
+
+body aside .left {
+    padding: 256 800px;
+    grid-template-columns: 
+}
+
+body header .admin{
+    padding: 1024 64px;
+    color: #C9AEFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+
+
+
+
+
+
 
 
