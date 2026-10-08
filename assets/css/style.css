@@ -109,6 +109,10 @@ body header nav a.active {
     color: #D0BCFF;
 }
 
+
+
+
+
 body header .right {
     display: flex;
     align-items: center;
@@ -119,3 +123,35 @@ body header .right {
 /**********************
 * BODY / Block 1
 **********************/
+
+
+
+/**********************
+* HEADER/ADMIN
+**********************/
+
+
+
+body aside .left {
+    padding: 256 800px;
+    
+}
+
+body header .admin{
+    padding: 1024 64px;
+    color: #C9AEFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+
+
+
+
+
+
+
+
