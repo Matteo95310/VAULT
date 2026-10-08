@@ -115,21 +115,29 @@ body header .right {
     color: #fff;
 }
 
+   
+
+.boite h2 {
+    align-items: left;
+    color: yellow;
+}
 .boite-entière {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-}
-.boite h2 {
-    align-items: center;
-    color: yellow;
+    color: white;
 }
 .boite p {
     align-items: center;
     color: white;
 }
 
+
+.stat{
+    display: flex;
+    gap: 30px;
+}
 
 /**********************
 * BODY / Block 1
