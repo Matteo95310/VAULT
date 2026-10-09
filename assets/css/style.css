@@ -134,6 +134,7 @@ body header .right .search_bar {
     border-radius: 10px;
     padding: 4px 16px;
 }
+
 body header .right .search_bar input[type="search"] {
     color: #958EA0;
     background-color: #191B22;
@@ -233,10 +234,17 @@ body footer {
     background-color: #070910;
 }
 
-body footer .right nav ul {
+body footer .right nav ul{
     display: flex;
     gap: 30px;
     list-style-type: none;
+}
+
+body footer nav a {
+    color: #CBC3D7;
+    text-decoration: none;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 body footer .left{
@@ -249,8 +257,14 @@ body footer .left{
 body footer .right{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     color: #958EA0;
+}
+
+body footer .left .footer_arrangment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body footer .footer_title {
@@ -266,8 +280,22 @@ body footer .left .footer_logo {
     color: #E2E2EB;
 }
 
-body footer .left .footer_arrangment{
+body footer .right .version span{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    color: #CBC3D7;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: #191B22;
+    padding: 4px 8px;
 }
 
+body footer .right .version::before{
+    content: '';
+    display: block;
+    height: 8px;
+    width: 8px;
+    background-color: #FFB95F;
+    border-radius: 50%;
+}
