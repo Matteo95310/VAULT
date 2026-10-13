@@ -35,3 +35,18 @@ CREATE TABLE user_media (
     status VARCHAR(120) NOT NULL,
     rating TEXT NULL
 ) ENGINE = InnoDB; 
+
+CREATE TABLE Badge (
+    id INT unsigned auto_increment PRIMARY KEY,
+    code VARCHAR(120) NOT NULL UNIQUE,
+    name VARCHAR(120) NOT NULL,
+    description VARCHAR(120),
+) ENGINE = InnoDB;
+
+
+CREATE TABLE user_badges (
+    id INT unsigned auto_increment PRIMARY KEY,
+    user_id VARCHAR(120) NOT NULL UNIQUE,
+    badge_id INT unsigned auto_increment PRIMARY KEY UNIQUE,
+    awarded_at  DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+)
