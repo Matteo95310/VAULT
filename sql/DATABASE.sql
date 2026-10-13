@@ -20,7 +20,7 @@ CREATE TABLE categories (
 
 <!--------------------code assya----------------->
 
-CREATE TABLE media (
+CREATE TABLE medias (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     category_id VARCHAR(120) NOT NULL,
     release_year DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -29,14 +29,19 @@ CREATE TABLE media (
 ) ENGINE = INNODB;
 
 
-CREATE TABLE user_media (
+CREATE TABLE user_medias (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     user_id VARCHAR(120) NOT NULL UNIQUE,
     status VARCHAR(120) NOT NULL,
     rating TEXT NULL
 ) ENGINE = InnoDB; 
 
-CREATE TABLE Badge (
+
+
+
+
+
+CREATE TABLE badges (
     id INT unsigned auto_increment PRIMARY KEY,
     code VARCHAR(120) NOT NULL UNIQUE,
     name VARCHAR(120) NOT NULL,
@@ -49,4 +54,12 @@ CREATE TABLE user_badges (
     user_id VARCHAR(120) NOT NULL UNIQUE,
     badge_id INT unsigned auto_increment PRIMARY KEY UNIQUE,
     awarded_at  DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-)
+
+    FOREIGN KEY(user_id)
+        REFERENCES users(id)
+        ON DELETE CASCADE,
+
+    FOREINGN KEY(badge_id)
+        REFERENCES badges(id)
+        ON DELETE CASCADE,
+) ENGINE = InnoDB;
