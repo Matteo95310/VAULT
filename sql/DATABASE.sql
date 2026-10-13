@@ -33,13 +33,18 @@ CREATE TABLE user_medias (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     user_id VARCHAR(120) NOT NULL UNIQUE,
     status VARCHAR(120) NOT NULL,
-    rating TEXT NULL
+    rating TEXT NULL,
+
+    (PRIMARY KEY (media, user_media),
+
+    FOREIGN KEY (media)
+        REFERENCES media(id)
+        ON DELETE CASCADE,
+
+    FOREIGN KEY (user_media)
+        REFERENCES user(media)
+        ON DELETE RESTRICT
 ) ENGINE = InnoDB; 
-
-
-
-
-
 
 CREATE TABLE badges (
     id INT unsigned auto_increment PRIMARY KEY,
