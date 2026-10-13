@@ -17,3 +17,21 @@ CREATE TABLE categories (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(120) NOT NULL
 ) ENGINE = InnoBD
+
+<!--------------------code assya----------------->
+
+CREATE TABLE media (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    category_id VARCHAR(120) NOT NULL,
+    release_year DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    desscription TEXT NULL,
+    image_path VARCHAR(255)
+) ENGINE = INNODB;
+
+
+CREATE TABLE user_media (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(120) NOT NULL UNIQUE,
+    status VARCHAR(120) NOT NULL,
+    rating TEXT NULL
+) ENGINE = InnoDB; 
