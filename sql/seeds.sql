@@ -24,3 +24,9 @@ INSERT INTO medias(category_id, title, release_year, description, image_path) VA
     ('3', 'God Of War', '2022', 'https://static.posters.cz/image/350/affiches-et-posters/playstation-god-of-war-i116582.jpg'),
     ('3', 'God Of War II', '2007', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVDe5OMPJdM1DOYZ-FrwDTRxNopDd6x_nQ65J3FwpnTO4Z4Qn3R3_cXM&s=10'),
     
+
+
+INSERT INTO users(username, email, password_hash, role) VALUES
+    ('Bob', 'Bob@mail.com', 'dfondfnjodf', 'admin' )
+    ('Bakary', 'bakary@bofzeb.fr', 'zfgzergz', 'client')
+    ('Patrick', 'patrick@zejkguzej.com', 'kljbfkzj', 'client')
