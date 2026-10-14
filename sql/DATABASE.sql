@@ -32,8 +32,12 @@ CREATE TABLE medias (
 CREATE TABLE user_medias (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     user_id VARCHAR(120) NOT NULL UNIQUE,
-    status VARCHAR(120) NOT NULL,
-    rating TEXT NULL,
+    status ENUM('planned','in_progress','completed') NOT NULL,
+    rating INT NOT NULL,
+    CHECK rating BETWEEN 1 AND 5
+) 
+
+
 
     (PRIMARY KEY (media, user_media),
 
