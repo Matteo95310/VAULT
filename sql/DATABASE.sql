@@ -42,17 +42,9 @@ CREATE TABLE IF NOT EXISTS user_medias (
     FOREIGN KEY(medias_id)
     	REFERENCES medias(id)
     	ON DELETE CASCADE
-    rating INT NOT NULL,
-    CHECK rating BETWEEN 1 AND 5
-
 ) ENGINE = InnoDB; 
 
-
-
-
-
-
-CREATE TABLE badges (
+CREATE TABLE IF NOT EXISTS badges (
     id INT unsigned auto_increment PRIMARY KEY,
     code VARCHAR(120) NOT NULL UNIQUE,
     name VARCHAR(120) NOT NULL,
@@ -70,7 +62,6 @@ CREATE TABLE IF NOT EXISTS user_badges (
         REFERENCES users(id)
         ON DELETE CASCADE,
 
-    FOREIGN KEY(badge_id)
     FOREIGN KEY(badge_id)
         REFERENCES badges(id)
         ON DELETE CASCADE
