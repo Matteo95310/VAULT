@@ -16,6 +16,7 @@ INSERT INTO medias(category_id, title, release_year, description, image_path) VA
     ('3','Zelda','2019','https://images.affiches-et-posters.com//albums/3/56146/medium/poster-jeu-video-the-legend-zelda-links-awakening-.'),
     ('3', 'God Of War', '2022', 'https://static.posters.cz/image/350/affiches-et-posters/playstation-god-of-war-i116582.jpg'),
     ('3', 'God Of War II', '2007', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVDe5OMPJdM1DOYZ-FrwDTRxNopDd6x_nQ65J3FwpnTO4Z4Qn3R3_cXM&s=10'),
+<<<<<<< HEAD
 
 
     INSERT INTO badges(code, name, description) VALUES
@@ -24,3 +25,12 @@ INSERT INTO medias(category_id, title, release_year, description, image_path) VA
     ('1003', 'gamer', 'Avoir terminé au moins 3 jeux vidéo répertoriés.'),
     ('1004', 'explorer', "Enregistrer un score d'au moins 15 au mini-jeu interactif.");
     
+=======
+    
+
+
+INSERT INTO users(username, email, password_hash, role) VALUES
+    ('Bob', 'Bob@mail.com', 'dfondfnjodf', 'admin' )
+    ('Bakary', 'bakary@bofzeb.fr', 'zfgzergz', 'client')
+    ('Patrick', 'patrick@zejkguzej.com', 'kljbfkzj', 'client')
+>>>>>>> master
