@@ -1,7 +1,3 @@
-/***********************************
-MATTEO
-***********************************/
-
 CREATE TABLE users (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(120) NOT NULL,
@@ -18,7 +14,6 @@ CREATE TABLE categories (
     name VARCHAR(120) NOT NULL
 ) ENGINE = InnoBD
 
-<!--------------------code assya----------------->
 
 CREATE TABLE medias (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -26,6 +21,9 @@ CREATE TABLE medias (
     release_year DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
     desscription TEXT NULL,
     image_path VARCHAR(255)
+
+    FOREIGN KEY (category_id)
+        REFERENCES  categories(id)
 ) ENGINE = INNODB;
 
 
@@ -35,19 +33,10 @@ CREATE TABLE user_medias (
     status ENUM('planned','in_progress','completed') NOT NULL,
     rating INT NOT NULL,
     CHECK rating BETWEEN 1 AND 5
-) 
 
-
-
-    (PRIMARY KEY (media, user_media),
-
-    FOREIGN KEY (media)
-        REFERENCES media(id)
+    FOREIGN KEY (user_id)
+        REFERENCES users(id)
         ON DELETE CASCADE,
-
-    FOREIGN KEY (user_media)
-        REFERENCES user(media)
-        ON DELETE RESTRICT
 ) ENGINE = InnoDB; 
 
 CREATE TABLE badges (
@@ -68,7 +57,7 @@ CREATE TABLE user_badges (
         REFERENCES users(id)
         ON DELETE CASCADE,
 
-    FOREINGN KEY(badge_id)
+    FOREIGN KEY(badge_id)
         REFERENCES badges(id)
         ON DELETE CASCADE,
 ) ENGINE = InnoDB;
