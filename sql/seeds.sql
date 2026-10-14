@@ -1,7 +1,7 @@
-
-
-
-
+INSERT INTO categories (name) VALUES
+    ('film'),
+    ('serie'),
+    ('jeux video')
 
 
 INSERT INTO badges(code, name, description) VALUES
