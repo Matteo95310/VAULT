@@ -35,11 +35,11 @@ CREATE TABLE user_medias (
     status ENUM('planned','in_progress','completed') NOT NULL,
     rating INT NOT NULL,
     CHECK rating BETWEEN 1 AND 5
-) 
 
 
 
-    (PRIMARY KEY (media, user_media),
+
+    PRIMARY KEY (media, user_media),
 
     FOREIGN KEY (media)
         REFERENCES media(id)
@@ -73,7 +73,7 @@ CREATE TABLE user_badges (
         REFERENCES users(id)
         ON DELETE CASCADE,
 
-    FOREINGN KEY(badge_id)
+    FOREIGN KEY(badge_id)
         REFERENCES badges(id)
         ON DELETE CASCADE,
 ) ENGINE = InnoDB;
