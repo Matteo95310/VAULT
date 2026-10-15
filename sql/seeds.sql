@@ -21,13 +21,8 @@ INSERT INTO medias(category_id, title, release_year, description, image_path) VA
 
     ('3','Zelda','2019','https://images.affiches-et-posters.com//albums/3/56146/medium/poster-jeu-video-the-legend-zelda-links-awakening-.'),
     ('3', 'God Of War', '2022', 'https://static.posters.cz/image/350/affiches-et-posters/playstation-god-of-war-i116582.jpg'),
-<<<<<<< HEAD
     ('3', 'God Of War II', '2007', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVDe5OMPJdM1DOYZ-FrwDTRxNopDd6x_nQ65J3FwpnTO4Z4Qn3R3_cXM&s=10');
 
-<<<<<<< HEAD
-=======
-    ('3', 'God Of War II', '2007', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVDe5OMPJdM1DOYZ-FrwDTRxNopDd6x_nQ65J3FwpnTO4Z4Qn3R3_cXM&s=10'),
->>>>>>> d0dd9b193c3904f43961cdbb6acbaf7f44a811b4
 
 
 INSERT INTO badges(code, name, description) VALUES
