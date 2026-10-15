@@ -66,3 +66,4 @@ CREATE TABLE IF NOT EXISTS user_badges (
         REFERENCES badges(id)
         ON DELETE CASCADE
 ) ENGINE = InnoDB;
+
