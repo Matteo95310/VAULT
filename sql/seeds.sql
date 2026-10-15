@@ -39,3 +39,4 @@ INSERT INTO user_medias (user_id, medias_id, rating, status) VALUES
     (2, 2, null, 'planned')
     (2, 9, 5, 'in_progress')
     (3, 5, 1, 'completed')
+    
