@@ -1,7 +1,8 @@
-INSERT INTO users(username, email, password_hash, role) VALUES
-    ('Bob', 'Bob@mail.com', 'dfondfnjodf', 'admin' )
-    ('Bakary', 'bakary@bofzeb.fr', 'zfgzergz', 'client')
-    ('Patrick', 'patrick@zejkguzej.com', 'kljbfkzj', 'client')
+INSERT INTO users(username, email, password_hash, role, best_score) VALUES
+    ('Bob', 'Bob@mail.com', 'dfondfnjodf', 'admin', 0 )
+    ('Bakary', 'bakary@bofzeb.fr', 'zfgzergz', 'client', 35)
+    ('Patrick', 'patrick@zejkguzej.com', 'kljbfkzj', 'client', 35)
+
 
 INSERT INTO categories (name) VALUES
     ('film'),
@@ -27,3 +28,23 @@ INSERT INTO badges(code, name, description) VALUES
     ('1002', 'cinephile', "Avoir terminé le visionnage d'au moins 3 films du catalogue."),
     ('1003', 'gamer', 'Avoir terminé au moins 3 jeux vidéo répertoriés.'),
     ('1004', 'explorer', "Enregistrer un score d'au moins 15 au mini-jeu interactif.");
+
+
+INSERT INTO user_medias (user_id, medias_id, rating, status) VALUES
+    (1, 1, 4, 'completed')
+    (1, 2, 5, 'completed')
+    (1, 3, 3, 'completed')
+    (1, 4, 2, 'planned')
+    (1, 5, 1, 'planned')
+    (2, 2, null, 'planned')
+    (1, 9, 5, 'in_progress')
+    (3, 5, 1, 'completed')
+
+
+    
+
+
+    
+    
+
+
