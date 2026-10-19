@@ -17,8 +17,9 @@ CREATE TABLE IF NOT EXISTS categories (
 CREATE TABLE IF NOT EXISTS medias (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     category_id INT UNSIGNED NOT NULL,
+    title VARCHAR(120),
     release_year INT NULL,
-    desscription TEXT NULL,
+    description TEXT NULL,
     image_path VARCHAR(255),
     
 	FOREIGN KEY (category_id)
