@@ -135,10 +135,10 @@ body header .right .search_bar {
     padding: 4px 16px;
 }
 
-   
+
 
 .boite h2 {
-    align-items: left;
+    align-items: flex-start;
     color: yellow;
 }
 .boite-entière {
