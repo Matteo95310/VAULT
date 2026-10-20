@@ -54,3 +54,5 @@ SELECT
     u.id AS user_id,
     m.id AS medias_id,
 FROM category AS c
+    (2, 9, 5, 'in_progress')
+    (3, 5, 1, 'completed')
