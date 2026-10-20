@@ -135,29 +135,46 @@ body header .right .search_bar {
     padding: 4px 16px;
 }
 
-   
 
+.boite-entière {
+    display: block;
+    justify-content: center;
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+    gap: 20px;
+    box-shadow: 0px 0px 1px #D0BCFF66;
+    list-style-type: none;
+    color: white;
+}
 .boite h2 {
     align-items: left;
-    color: yellow;
+    color: rgb(215, 152, 36);
+    font-size: 20px;
+    box-sizing: content-box;
 }
-.boite-entière {
-    display: flex;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    color: white;
-}
+
 .boite p {
     align-items: center;
-    color: white;
+    color: rgb(188, 123, 188);
+    box-shadow: 0px 0px 1px;
 }
-
 
 .stat{
-    display: flex;
+    display: bloc;
     gap: 30px;
+    margin-inline:10px;
+    height: 38px;
+    border-radius: 5px;
+    font: 11px monospace;
 }
+.stat-final{
+    display: bloc;
+    gap: 30px;
+    margin-inline:10px;
+    height: 38px;
+    border-radius: 5px;
+    font: 11px monospace;
+}
+
 
 body header .right .search_bar input[type="search"] {
     color: #958EA0;

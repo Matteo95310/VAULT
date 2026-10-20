@@ -49,4 +49,8 @@ INSERT INTO users(username, email, password_hash, role) VALUES
     ('Patrick', 'patrick@zejkguzej.com', 'kljbfkzj', 'client')
 
 
-INSERT INTO 
+SELECT 
+    c.id AS categody_id,
+    u.id AS user_id,
+    m.id AS medias_id,
+FROM category AS c
