@@ -1,8 +1,8 @@
 INSERT INTO users(username, email, password_hash, role, best_score) VALUES
-    ('Bob', 'Bob@mail.com', 'dfondfnjodf', 'admin', 0 ),
-    ('Bakary', 'bakary@bofzeb.fr', 'zfgzergz', 'client', 35),
-    ('Patrick', 'patrick@zejkguzej.com', 'kljbfkzj', 'client', 35);
-    
+    ('Bob', 'Bob@mail.com', '$2a$12$/21zDwADvlRjTeM9tsmL9.j.yRWs0LqySqE21Ey89SQP1FLMM1Vsa', 'admin', 0 ),
+    ('Bakary', 'bakary@bofzeb.fr', '$2a$12$D4GArDDc.C32x0Swp1x.2.Wky.XA0GbWoK/uS4LYvgn2YRaxci8/O', 'client', 35),
+    ('Patrick', 'patrick@zejkguzej.com', '$2a$12$KzUIyvMx3MEpaeesz5Y3Uu7.9MxgOA0ZGWuiCQk6lwhmjHjxYKvVe', 'client', 35);
+
 
 
 INSERT INTO categories (name) VALUES
@@ -41,4 +41,6 @@ INSERT INTO user_medias (user_id, medias_id, rating, status) VALUES
     (2, 9, 5, 'in_progress'),
     (3, 5, 1, 'completed');
 
-    
+
+
+

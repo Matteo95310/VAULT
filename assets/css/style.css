@@ -136,27 +136,49 @@ body header .right .search_bar {
 }
 
 
-
-.boite h2 {
-    align-items: flex-start;
-    color: yellow;
-}
-.boite-entière {
-    display: flex;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+.boite-entiere {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     gap: 20px;
-    color: white;
-}
-.boite p {
-    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color: white;
 }
 
+.boite-entiere span.pre-title {
+    color: #FFB95F;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
 
-.stat{
-    display: flex;
+.boite-entiere h2 {
+    margin: 0;
+    font-size: 22px;
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.boite-entiere p.description {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.boite-entiere .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stat .cercle-de-progression{
+    display: block;
     gap: 30px;
+    margin-inline: 10px;
+    height: 38px;
+    border: 0;
+    border-radius: 5px;
 }
 
 body header .right .search_bar input[type="search"] {
@@ -255,17 +277,13 @@ body header .right .profile img{
 
 body {
     margin: 0;
-    padding: 30px;
+    padding: 0;
     background: #101118;
     color: #eee;
     font-family: Arial, sans-serif;
 }
 
 .catalogue {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 70px;
