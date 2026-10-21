@@ -323,8 +323,8 @@ h2 {
 p {
     margin: 0;
     color: #c9c5d2;
-    font-size: 13px;
-    line-height: 1.5;
+    /*font-size: 13px;
+    line-height: 1.5;*/
 }
 
 .evaluation {
