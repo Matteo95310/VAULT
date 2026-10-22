@@ -3,15 +3,49 @@ body #top_profil {
     display: flex;
     padding: 40px;
     border-radius: 16px;
-    margin: 0px 48px;
+    margin: 24px 48px 0px 48px ;
     gap: 40px;
     align-items: flex-start;
+    position: relative;
+    overflow: hidden;
 }
 
-body #top_profil > * {
+body #top_profil > *:not(.light){
+    z-index: 1;
+}
+
+body #top_profil .light{
+    border-radius: 12px;
+    position: absolute;
+    filter: blur(95px);
+}
+
+body #top_profil .light.light_1{
+    width: 320px;
+    height: 320px;
+    background-color: #FFB95F0D;
+    bottom: -96px;
+    left: 395px;
+
+
+
+
 
 
 }
+
+body #top_profil .light.light_2{
+    width: 384px;
+    height: 384px;
+    background-color: #D0BCFF1A;
+    top: -96px;
+    right: -96px;
+
+
+
+}
+
+
 
 body #top_profil .profil_container {
     display: flex;
@@ -41,7 +75,7 @@ body #top_profil .profil_container .photo_profil_container .photo_profil {
 }
 
 
-body #top_profil .profil_container .photo_profil_container .status_connected{
+body #top_profil .profil_container .photo_profil_container .status_connected {
     background-color: #0C0E14;
     border-radius: 4px;
     position: absolute;
@@ -51,22 +85,21 @@ body #top_profil .profil_container .photo_profil_container .status_connected{
     font-weight: 700;
     font-size: 10px;
     letter-spacing: 0.5px;
-    color:#FFB95F;
+    color: #FFB95F;
     padding: 2px 4px;
 }
 
-body #top_profil .profil_container .information_container{
+body #top_profil .profil_container .information_container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
 
 
-
 }
 
 
-body #top_profil .profil_container .information_container .first_line{
+body #top_profil .profil_container .information_container .first_line {
     font-family: JetBrains Mono;
     font-weight: 600;
     font-size: 10px;
@@ -78,13 +111,13 @@ body #top_profil .profil_container .information_container .first_line{
 
 }
 
-body #top_profil .profil_container .information_container .first_line .bagde{
+body #top_profil .profil_container .information_container .first_line .bagde {
     background-color: #1E1F26;
     color: #D0BCFF;
     padding: 2px 8px;
 }
 
-body #top_profil .profil_container .information_container .first_line .description{
+body #top_profil .profil_container .information_container .first_line .description {
     color: #958EA0;
     font-family: JetBrains Mono;
     font-weight: 600;
@@ -93,7 +126,7 @@ body #top_profil .profil_container .information_container .first_line .descripti
 }
 
 
-body #top_profil .profil_container .information_container h2{
+body #top_profil .profil_container .information_container h2 {
     font-family: Space Grotesk;
     font-weight: 700;
     font-size: 32px;
@@ -102,14 +135,14 @@ body #top_profil .profil_container .information_container h2{
 
 }
 
-body #top_profil .profil_container .information_container .third_line{
+body #top_profil .profil_container .information_container .third_line {
     display: flex;
     align-items: center;
     gap: 8px;
 
 }
 
-body #top_profil .profil_container .information_container .third_line .pseudo{
+body #top_profil .profil_container .information_container .third_line .pseudo {
     color: #D2BBFF;
     font-family: JetBrains Mono;
     font-weight: 500;
@@ -117,7 +150,7 @@ body #top_profil .profil_container .information_container .third_line .pseudo{
 
 }
 
-body #top_profil .profil_container .information_container .third_line .point{
+body #top_profil .profil_container .information_container .third_line .point {
     font-family: Inter;
     font-weight: 400;
     font-size: 14px;
@@ -127,7 +160,7 @@ body #top_profil .profil_container .information_container .third_line .point{
 
 }
 
-body #top_profil .profil_container .information_container .third_line .inscription{
+body #top_profil .profil_container .information_container .third_line .inscription {
     font-family: Inter;
     font-weight: 400;
     font-size: 12px;
@@ -135,32 +168,230 @@ body #top_profil .profil_container .information_container .third_line .inscripti
 
 }
 
-body #top_profil .profil_container .information_container .fourth_line{
+body #top_profil .profil_container .information_container .fourth_line {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
 }
 
-body #top_profil .profil_container .information_container .fourth_line .badge{
+body #top_profil .profil_container .information_container .fourth_line .badge {
     background-color: #1E1F26;
     display: flex;
-    gap: 6px ;
+    gap: 6px;
     border-radius: 12px;
     font-family: JetBrains Mono;
     font-weight: 600;
     font-size: 10px;
     padding: 8px 12px;
     white-space: nowrap;
+}
+
+body #top_profil .xp_level {
+    background-color: #1E1F26;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+    max-width: 576px;
+}
+
+body #top_profil .xp_level .total_xp_level {
+    display: flex;
+    justify-content: space-between;
 
 
+}
 
+body #top_profil .xp_level .total_xp_level .top_left_container {
+    display: flex;
+    gap: 8px;
+}
+
+
+body #top_profil .xp_level .total_xp_level .top_left_container .logo_flash {
+    background-color: #282A30;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 12px 0px #FFB95F40;
+}
+
+
+body #top_profil .xp_level .total_xp_level .top_left_container .experience_container .experience_total {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #top_profil .xp_level .total_xp_level .top_left_container .experience_container .xp_count {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.6px;
+}
+
+body #top_profil .xp_level .total_xp_level .top_left_container .experience_container .xp_count .color_xp_points {
+    color: #FFB95F;
+    font-family: JetBrains Mono;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+
+
+body #top_profil .xp_level .total_xp_level .palier {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #D0BCFF;
+    text-align: center;
+
+}
+
+
+body #top_profil .xp_level .total_xp_level .palier .type_script {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
 
 
 }
 
 
+body #top_profil .xp_level .progress_level {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+body #top_profil .xp_level .progress_level .total_progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body #top_profil .xp_level .progress_level .total_progress .progress_where {
+    font-family: JetBrains Mono;
+    font-weight: 500;
+    font-size: 10px;
+    color: #CBC3D7;
+
+}
+
+body #top_profil .xp_level .progress_level .total_progress .progress_where span {
+    color: #D0BCFF;
+}
 
 
+body #top_profil .xp_level .progress_level .barre_black {
+    background-color: #0C0E14;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 2px;
+}
+
+body #top_profil .xp_level .progress_level .barre_black .barre_fade_color {
+    background: linear-gradient(90deg, #6001D1 0%, #D0BCFF 50%, #FFB95F 100%);
+    border-radius: 12px;
+    height: 8px;
+    width: 40%;
+    box-shadow: 0px 0px 10px 0px #A078FF;
+    transition: all 0.35s ease-in;
+
+}
+
+body #top_profil .xp_level .progress_level .total_progress .percentage_xp {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: #FFB95F;
+
+}
+
+body #top_profil .xp_level .progress_level .progression_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+body #top_profil .xp_level .progress_level .progression_text > p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
 
 
+}
+
+body #top_profil .xp_level .bareme_gain {
+    background-color: #0C0E14CC;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+body #top_profil .xp_level .bareme_gain .logo_info_text {
+    display: flex;
+    gap: 4px;
+}
+
+
+body #top_profil .xp_level .bareme_gain .logo_info_text p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.25px;
+    color: #E2E2EB;
+
+}
+
+body #top_profil .xp_level .bareme_gain {
+    display: flex;
+    gap: 8px;
+
+
+}
+
+
+body #top_profil .xp_level .bareme_gain .ajout_xp {
+    display: flex;
+    gap: 8px;
+}
+
+
+body #top_profil .xp_level .bareme_gain .ajout_xp .plus_xp {
+    background-color: #191B22;
+    border-radius: 2px;
+    padding: 6px;
+    flex-grow: 1;
+}
+
+body #top_profil .xp_level .bareme_gain .ajout_xp .plus_xp > p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #CBC3D7;
+}
+
+
+body #top_profil .xp_level .bareme_gain .ajout_xp .plus_xp > p span {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #FFB95F;
+
+}
