@@ -1,26 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
 body #top_profil {
     background-color: #191B22;
     display: flex;
     padding: 40px;
     border-radius: 16px;
-    margin: 24px 48px 0px 48px ;
+    margin: 24px 48px 0px 48px;
     gap: 40px;
     align-items: flex-start;
     position: relative;
     overflow: hidden;
 }
 
-body #top_profil > *:not(.light){
+body #top_profil > *:not(.light) {
     z-index: 1;
 }
 
-body #top_profil .light{
+body #top_profil .light {
     border-radius: 12px;
     position: absolute;
     filter: blur(95px);
 }
 
-body #top_profil .light.light_1{
+body #top_profil .light.light_1 {
     width: 320px;
     height: 320px;
     background-color: #FFB95F0D;
@@ -28,23 +36,16 @@ body #top_profil .light.light_1{
     left: 395px;
 
 
-
-
-
-
 }
 
-body #top_profil .light.light_2{
+body #top_profil .light.light_2 {
     width: 384px;
     height: 384px;
     background-color: #D0BCFF1A;
     top: -96px;
     right: -96px;
 
-
-
 }
-
 
 
 body #top_profil .profil_container {
@@ -395,3 +396,247 @@ body #top_profil .xp_level .bareme_gain .ajout_xp .plus_xp > p span {
     color: #FFB95F;
 
 }
+
+body #middle_badges {
+    margin: 40px 48px 40px 48px;
+    padding: 16px;
+
+
+}
+
+body #middle_badges .text_register .register_p_container {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1px;
+
+}
+body #middle_badges .text_register .second_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body #middle_badges .text_register .second_line .titre {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 22px;
+    color: #E2E2EB;
+
+}
+
+
+body #middle_badges .text_register .second_line .completion {
+    font-family: JetBrains Mono;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+
+body #middle_badges .text_register .second_line .completion span {
+    color: #D0BCFF;
+
+}
+
+body #middle_badges .badges_container {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0px;
+
+
+}
+
+
+
+body #middle_badges .badges_container .badges_colors_p {
+    background-color: #191B22;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container_logo {
+    background-color: #33343B;
+    border-radius: 8px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 12px 0px #D0BCFF66;
+
+}
+
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container_obtenu{
+    background-color: #D0BCFF33;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px 2px 8px;
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container_obtenu img {
+    width: 10px;
+    height: 10px;
+
+}
+
+
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container_obtenu p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #D0BCFF;
+
+}
+
+body #middle_badges .badges_container .collectionneur {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    gap: 4px;
+}
+
+body #middle_badges .badges_container .collectionneur .text_collectionneur {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 18px;
+    color: #E2E2EB;
+}
+
+body #middle_badges .badges_container .collectionneur p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #CBC3D7;
+
+}
+
+body #middle_badges .badges_container .acquisition_p {
+    background-color: #0C0E1499;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 8px 8px;
+
+}
+
+body #middle_badges .badges_container .acquisition_p .condition_texte{
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+
+}
+
+body #middle_badges .badges_container .acquisition_p p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+    padding: 0px 31px 0px 0px;
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_o {
+    background-color: #191B22;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container_logo {
+    background-color: #33343B;
+    border-radius: 8px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 12px 0px #FFB95F59;
+
+}
+
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container_obtenu{
+    background-color: #D0BCFF33;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px 2px 8px;
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container_obtenu img {
+    width: 10px;
+    height: 10px;
+
+}
+
+
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container_obtenu p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #FFB95F;
+
+}
+
+body #middle_badges .badges_container .acquisition_o {
+    background-color: #0C0E1499;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 8px 8px;
+
+}
+
+body #middle_badges .badges_container .acquisition_o .condition_texte{
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+
+}
+
+body #middle_badges .badges_container .acquisition_o p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #FFB95F;
+    padding: 0px 31px 0px 0px;
+
+}
+
+
+
