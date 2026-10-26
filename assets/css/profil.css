@@ -638,5 +638,200 @@ body #middle_badges .badges_container .acquisition_o p {
 
 }
 
+body #middle_badges .badges_container .badges_black_white_g {
+    background-color: #191B2299;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+body #middle_badges .badges_container .badges_black_white_g .logo_mannette {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+
+}
+
+
+body #middle_badges .badges_container .badges_black_white_g .logo_mannette .container_logo {
+    background-color: #1E1F26;
+    border-radius: 8px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body #middle_badges .badges_container .badges_black_white_g .logo_mannette .container_verrouillé {
+    background-color: #D0BCFF33;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px 2px 8px;
+}
+
+
+body #middle_badges .badges_container .badges_black_white_g .logo_mannette .container_verrouillé img {
+    width: 10px;
+    height: 10px;
+}
+
+body #middle_badges .badges_container .badges_black_white_g .logo_mannette .container_verrouillé p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .Gamer {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    gap: 4px;
+}
+
+body #middle_badges .badges_container .Gamer .text_gamer {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 18px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .Gamer p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .progression {
+    background-color: #0C0E1466;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 8px 8px;
+    gap: 6px;
+}
+
+body #middle_badges .badges_container .progression .progression_texte {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+body #middle_badges .badges_container .progression p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+
+}
+
+body #middle_badges .badges_container .barre_black_g {
+    background-color: #1E1F26;
+    width: 268px;
+    height: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+body #middle_badges .badges_container .badges_black_white_e {
+    background-color: #191B2299;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+body #middle_badges .badges_container .badges_black_white_e .logo_explo {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+}
+
+body #middle_badges .badges_container .badges_black_white_e .logo_explo .container_logo_e {
+    background-color: #1E1F26;
+    border-radius: 8px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body #middle_badges .badges_container .badges_black_white_e .logo_explo .container_verrouillé {
+    background-color: #D0BCFF33;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px 2px 8px;
+}
+
+body #middle_badges .badges_container .badges_black_white_e .logo_explo .container_verrouillé img {
+    width: 10px;
+    height: 10px;
+}
+
+body #middle_badges .badges_container .badges_black_white_e .logo_explo .container_verrouillé p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .explorateur {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    gap: 4px;
+}
+
+body #middle_badges .badges_container .explorateur .text_explorateur {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 18px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .explorateur p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #958EA0;
+
+}
+
+body #middle_badges .badges_container .best_score {
+    background-color: #0C0E1466;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 8px 8px;
+    gap: 6px;
+}
+
+body #middle_badges .badges_container .best_score .best_score_texte {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .best_score p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+body #middle_badges .badges_container .barre_black_e {
+    background-color: #1E1F26;
+    width: 268px;
+    height: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
 
 
