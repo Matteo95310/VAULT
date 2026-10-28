@@ -831,7 +831,180 @@ body #middle_badges .badges_container .barre_black_e {
     height: 4px;
     border-radius: 12px;
     overflow: hidden;
+}
+
+
+body #collection_personnelle {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 48px 40px 48px;
+    gap: 16px;
 
 }
+body #collection_personnelle .container_top {
+    display: flex;
+    background-color: #191B22;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 30px;
+
+}
+body #collection_personnelle .container_top .container_text_collection {
+    background-color: #191B22;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection{
+    background-color: #191B22;
+    margin: 24px 16px;
+}
+
+
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection .five_oeuvres{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+}
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection .five_oeuvres p {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection .five_oeuvres .cinq_oeuvres {
+    background-color: #A078FF;
+    border-radius: 6px;
+    padding: 2px 8px 2px 8px;
+
+
+}
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection .five_oeuvres .cinq_oeuvres p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #340080;
+
+}
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection .text_equilibre p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #958EA0;
+
+}
+
+body #collection_personnelle .container_top .container_magnette {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    width: 590px;
+    gap: 35px;
+
+
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette {
+    display: flex;
+    gap: 15px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_film {
+    display: flex;
+    align-items: center;
+    background-color: #1E1F26;
+    border-radius: 4px;
+    gap: 8px;
+    padding: 6px 12px 6px 12px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_film img {
+    width: 13px;
+    height: 11px;
+
+
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_film p{
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_series {
+    display: flex;
+    align-items: center;
+    background-color: #1E1F26;
+    border-radius: 4px;
+    gap: 8px;
+    padding: 6px 12px 6px 12px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_series img {
+    width: 13px;
+    height: 12px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_series p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_moyenne {
+    display: flex;
+    align-items: center;
+    background-color: #1E1F26;
+    border-radius: 4px;
+    gap: 8px;
+    padding: 6px 12px 6px 12px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_moyenne img {
+    width: 13px;
+    height: 13px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_moyenne p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+
+}
+
+body #collection_personnelle .container_top .container_magnette .one_magnette_p .magnette_ajouter{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: #D0BCFF;
+    border-radius: 4px;
+    gap: 8px;
+    padding: 6px 12px 6px 12px;
+
+}
+
+body #collection_personnelle .container_top .container_magnette .one_magnette_p .magnette_ajouter img {
+    width: 8px;
+    height: 8px;
+
+}
+
+body #collection_personnelle .container_top .container_magnette .one_magnette_p .magnette_ajouter p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #3C0091;
+}
+
+
 
 
