@@ -832,7 +832,6 @@ body #middle_badges .badges_container .barre_black_e {
 
 
 body #collection_personnelle {
-    background-color: orange;
     display: flex;
     flex-direction: column;
     margin: 40px 48px 40px 48px;
@@ -1820,13 +1819,72 @@ body #collection_personnelle .real_catalogue .five_media .six_collonne .edit {
 }
 
 
+body #collection_personnelle .bilan {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #191B22;
+}
+
+body #collection_personnelle .bilan .container_left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+body #collection_personnelle .bilan .container_left img {
+    width: 13.5px;
+    height: 12.75px;
+
+}
+
+body #collection_personnelle .bilan .container_left p {
+    font-family: JetBrains Mono;
+    font-weight: 500;
+    font-size: 12px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .bilan .container_left p span {
+    color: #FFB95F;
+}
 
 
+body #collection_personnelle .bilan .container_right {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .bilan .container_right .exportation p {
+    font-family: JetBrains Mono;
+    font-weight: 500;
+    font-size: 12px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .bilan .container_right .container_json {
+    background-color: #1E1F26;
+    border: 2px;
+    padding: 4px 12px 4px 12px;
+
+}
+
+body #collection_personnelle .bilan .container_right .container_json p {
+    font-family: Liberation Mono;
+    font-weight: 500;
+    font-size: 12px;
+}
 
 
+body #collection_personnelle .bilan .container_right .container_csv {
+    background-color: #1E1F26;
+    border: 2px;
+    padding: 4px 12px 4px 12px;
+}
 
-
-
-
-
-
+body #collection_personnelle .bilan .container_right .container_csv p {
+    font-family: Liberation Mono;
+    font-weight: 500;
+    font-size: 12px;
+}
