@@ -411,6 +411,7 @@ body #middle_badges .text_register .register_p_container {
     letter-spacing: 1px;
 
 }
+
 body #middle_badges .text_register .second_line {
     display: flex;
     justify-content: space-between;
@@ -448,13 +449,11 @@ body #middle_badges .badges_container {
 }
 
 
-
 body #middle_badges .badges_container .badges_colors_p {
     background-color: #191B22;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-
 
 
 }
@@ -464,7 +463,6 @@ body #middle_badges .badges_container .badges_colors_p .logo_colors_p {
     justify-content: space-between;
     padding: 16px;
     align-items: center;
-
 
 
 }
@@ -481,7 +479,7 @@ body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container
 
 }
 
-body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container_obtenu{
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container_obtenu {
     background-color: #D0BCFF33;
     border-radius: 12px;
     display: flex;
@@ -537,7 +535,7 @@ body #middle_badges .badges_container .acquisition_p {
 
 }
 
-body #middle_badges .badges_container .acquisition_p .condition_texte{
+body #middle_badges .badges_container .acquisition_p .condition_texte {
     font-family: JetBrains Mono;
     font-weight: 600;
     font-size: 10px;
@@ -562,7 +560,6 @@ body #middle_badges .badges_container .badges_colors_o {
     flex-direction: column;
 
 
-
 }
 
 body #middle_badges .badges_container .badges_colors_o .logo_colors_o {
@@ -570,7 +567,6 @@ body #middle_badges .badges_container .badges_colors_o .logo_colors_o {
     justify-content: space-between;
     padding: 16px;
     align-items: center;
-
 
 
 }
@@ -587,7 +583,7 @@ body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container
 
 }
 
-body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container_obtenu{
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container_obtenu {
     background-color: #D0BCFF33;
     border-radius: 12px;
     display: flex;
@@ -621,7 +617,7 @@ body #middle_badges .badges_container .acquisition_o {
 
 }
 
-body #middle_badges .badges_container .acquisition_o .condition_texte{
+body #middle_badges .badges_container .acquisition_o .condition_texte {
     font-family: JetBrains Mono;
     font-weight: 600;
     font-size: 10px;
@@ -721,6 +717,7 @@ body #middle_badges .badges_container .progression .progression_texte {
     font-size: 10px;
     color: #958EA0;
 }
+
 body #middle_badges .badges_container .progression p {
     font-family: JetBrains Mono;
     font-weight: 700;
@@ -842,6 +839,7 @@ body #collection_personnelle {
     gap: 16px;
 
 }
+
 body #collection_personnelle .container_top {
     display: flex;
     background-color: #191B22;
@@ -850,6 +848,7 @@ body #collection_personnelle .container_top {
     gap: 30px;
 
 }
+
 body #collection_personnelle .container_top .container_text_collection {
     background-color: #191B22;
     display: flex;
@@ -857,14 +856,13 @@ body #collection_personnelle .container_top .container_text_collection {
 
 }
 
-body #collection_personnelle .container_top .container_text_collection .titre_collection{
+body #collection_personnelle .container_top .container_text_collection .titre_collection {
     background-color: #191B22;
     margin: 24px 16px;
 }
 
 
-
-body #collection_personnelle .container_top .container_text_collection .titre_collection .five_oeuvres{
+body #collection_personnelle .container_top .container_text_collection .titre_collection .five_oeuvres {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -932,7 +930,7 @@ body #collection_personnelle .container_top .container_magnette .three_magnette 
 
 }
 
-body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_film p{
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_film p {
     font-family: JetBrains Mono;
     font-weight: 600;
     font-size: 10px;
@@ -981,7 +979,7 @@ body #collection_personnelle .container_top .container_magnette .three_magnette 
 
 }
 
-body #collection_personnelle .container_top .container_magnette .one_magnette_p .magnette_ajouter{
+body #collection_personnelle .container_top .container_magnette .one_magnette_p .magnette_ajouter {
     display: flex;
     align-items: center;
     position: absolute;
@@ -1004,6 +1002,830 @@ body #collection_personnelle .container_top .container_magnette .one_magnette_p 
     font-size: 10px;
     color: #3C0091;
 }
+
+body #collection_personnelle .real_catalogue {
+    border-radius: 8px;
+    background-color: #191B22;
+}
+
+
+body #collection_personnelle .real_catalogue .titre_collonne {
+    display: flex;
+    background-color: #33343B99;
+    border-radius: 8px;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .media {
+    width: 88px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .media p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .titre_category {
+    width: 329px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .titre_category p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .status {
+    width: 184px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .status p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .note_attribut {
+    width: 248px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+
+body #collection_personnelle .real_catalogue .titre_collonne .note_attribut p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .valeur_xp {
+    width: 150px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .valeur_xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .actions {
+    width: 184px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .actions p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .first_media {
+    display: flex;
+    align-items: center;
+    height: 104.5px;
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .fisrt_collonne {
+    padding: 12px 16px 12px 16px;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px 12px 31px;
+    justify-content: center;
+    width: 345px;
+    height: 42px;
+
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .titre_film p {
+    font-family: Space Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .c_a_p {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .c_a_p .film {
+    background-color: #1E1F26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .c_a_p .film p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .c_a_p .annee_producteur {
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .c_a_p .annee_producteur p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .first_media .third_collonne {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 104.5px;
+    padding: 43px 16px 41.5px 16px;
+
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .third_collonne .container_terminer {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 10px 4px 10px;
+    gap: 6px;
+    background-color: #6001D166;
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .third_collonne .container_terminer p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #C9AEFF;
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .fourth_collonne {
+    padding: 0px 0px 0px 15px;
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .fourth_collonne .stars {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .fourth_collonne .stars p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E2E2EB;
+
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .five_collonne {
+    padding: 0px 0px 0px 65px;
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .five_collonne .xp {
+    display: flex;
+    gap: 4px;
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .five_collonne .xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFB95F;
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .six_collonne {
+    padding: 0px 0px 0px 110px;
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .six_collonne .edit {
+    display: flex;
+    gap: 12px;
+}
+
+
+body #collection_personnelle .real_catalogue .second_media {
+    display: flex;
+    align-items: center;
+    height: 104.5px;
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .fisrt_collonne {
+    padding: 12px 16px 12px 16px;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px 12px 31px;
+    justify-content: center;
+    width: 345px;
+    height: 42px;
+
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .titre_film p {
+    font-family: Space Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .c_a_p {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .c_a_p .film {
+    background-color: #1E1F26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .c_a_p .film p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .c_a_p .annee_producteur {
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .c_a_p .annee_producteur p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .second_media .third_collonne {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 104.5px;
+    padding: 43px 16px 41.5px 16px;
+
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .third_collonne .container_terminer {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 10px 4px 10px;
+    gap: 6px;
+    background-color: #6001D166;
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .third_collonne .container_terminer p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #C9AEFF;
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .fourth_collonne {
+    padding: 0px 0px 0px 15px;
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .fourth_collonne .stars {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .fourth_collonne .stars p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E2E2EB;
+
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .five_collonne {
+    padding: 0px 0px 0px 65px;
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .five_collonne .xp {
+    display: flex;
+    gap: 4px;
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .five_collonne .xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFB95F;
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .six_collonne {
+    padding: 0px 0px 0px 110px;
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .six_collonne .edit {
+    display: flex;
+    gap: 12px;
+}
+
+
+body #collection_personnelle .real_catalogue .third_media {
+    display: flex;
+    align-items: center;
+    height: 104.5px;
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .fisrt_collonne {
+    padding: 12px 16px 12px 16px;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px 12px 31px;
+    justify-content: center;
+    width: 345px;
+    height: 42px;
+
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .titre_film p {
+    font-family: Space Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .c_a_p {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .c_a_p .film {
+    background-color: #1E1F26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .c_a_p .film p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .c_a_p .annee_producteur {
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .c_a_p .annee_producteur p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .third_media .third_collonne {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 104.5px;
+    padding: 43px 16px 41.5px 16px;
+
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .third_collonne .container_terminer {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 10px 4px 10px;
+    gap: 6px;
+    background-color: #6001D166;
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .third_collonne .container_terminer p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #C9AEFF;
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .fourth_collonne {
+    padding: 0px 0px 0px 15px;
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .fourth_collonne .stars {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .fourth_collonne .stars p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E2E2EB;
+
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .five_collonne {
+    padding: 0px 0px 0px 65px;
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .five_collonne .xp {
+    display: flex;
+    gap: 4px;
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .five_collonne .xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFB95F;
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .six_collonne {
+    padding: 0px 0px 0px 110px;
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .six_collonne .edit {
+    display: flex;
+    gap: 12px;
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media {
+    display: flex;
+    align-items: center;
+    height: 104.5px;
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .fisrt_collonne {
+    padding: 12px 16px 12px 16px;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px 12px 31px;
+    justify-content: center;
+    width: 345px;
+    height: 42px;
+
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .titre_film p {
+    font-family: Space Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .c_a_p {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .c_a_p .film {
+    background-color: #1E1F26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .c_a_p .film p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .c_a_p .annee_producteur {
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .c_a_p .annee_producteur p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .third_collonne {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 104.5px;
+    padding: 43px 16px 41.5px 16px;
+
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .third_collonne .container_terminer {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 10px 4px 10px;
+    gap: 6px;
+    background-color: #33343B;
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .third_collonne .container_terminer p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #CBC3D7;
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .fourth_collonne {
+    padding: 0px 0px 0px 15px;
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .fourth_collonne .stars {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .fourth_collonne .stars p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E2E2EB;
+
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .five_collonne {
+    padding: 0px 0px 0px 65px;
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .five_collonne .xp {
+    display: flex;
+    gap: 4px;
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .five_collonne .xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFB95F;
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .six_collonne {
+    padding: 0px 0px 0px 110px;
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .six_collonne .edit {
+    display: flex;
+    gap: 12px;
+}
+
+
+body #collection_personnelle .real_catalogue .five_media {
+    display: flex;
+    align-items: center;
+    height: 104.5px;
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .fisrt_collonne {
+    padding: 12px 16px 12px 16px;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px 12px 31px;
+    justify-content: center;
+    width: 345px;
+    height: 42px;
+
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .titre_film p {
+    font-family: Space Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .c_a_p {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .c_a_p .film {
+    background-color: #1E1F26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .c_a_p .film p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .c_a_p .annee_producteur {
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .c_a_p .annee_producteur p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .five_media .third_collonne {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 104.5px;
+    padding: 43px 16px 41.5px 16px;
+
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .third_collonne .container_terminer {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 10px 4px 10px;
+    gap: 6px;
+    background-color: #33343B;
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .third_collonne .container_terminer p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #CBC3D7;
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .fourth_collonne {
+    padding: 0px 0px 0px 15px;
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .fourth_collonne .stars {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .fourth_collonne .stars p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E2E2EB;
+
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .five_collonne {
+    padding: 0px 0px 0px 65px;
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .five_collonne .xp {
+    display: flex;
+    gap: 4px;
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .five_collonne .xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFB95F;
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .six_collonne {
+    padding: 0px 0px 0px 110px;
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .six_collonne .edit {
+    display: flex;
+    gap: 12px;
+}
+
+
+
+
+
+
+
+
 
 
 
