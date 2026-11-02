@@ -1,0 +1,12 @@
+body #top_profil {
+    background-color:red;
+    display: flex;
+    padding: 40px;
+}
+
+
+
+
+body #top_profil > * {
+    background-color: orange;
+}
