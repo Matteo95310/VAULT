@@ -10,7 +10,6 @@ INSERT INTO categories (name) VALUES
     ('serie'),
     ('jeux video');
 
-
 INSERT INTO medias(category_id, title, release_year, description, image_path) VALUES
     (1,'Men IN Black', '1997', '...', 'https://api.cartoonely.com/media/63f880bd27084_unnamed%20(55).png'),
     (1, 'Pulp fiction', '1994', '...', 'https://media.gqmagazine.fr/photos/6081757cb17bbf6a1f1be4eb/master/w_1600%2Cc_limit/71zSZQzlK+L._AC_SL1200_.jpg'),
