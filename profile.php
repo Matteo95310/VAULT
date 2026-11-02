@@ -32,14 +32,14 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Catalogue</a>
+                    <a href="index.php">Catalogue</a>
                 </li>
                 <li>
-                    <a class="profile active" href="profile.html">Mon profil</a>
+                    <a class="profile active" href="profile.php">Mon profil</a>
 
                 </li>
                 <li>
-                    <a class="admin" href="admin.html">Administration</a>
+                    <a class="admin" href="admin.php">Administration</a>
                 </li>
             </ul>
         </nav>
