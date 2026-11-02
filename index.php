@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<?php
+
+require 'includes/db.php';
+require 'includes/db.php';
+require 'includes/footer.php';
+require 'includes/header.php';
+require 'includes/top_footer.php';
+
+
+
+$pdo = getPDO();
+
+$query      = $pdo->query('SELECT * FROM medias ORDER BY name');
+$results    = $query->fetchAll();
+
+foreach($results as $key => $result) {
+    echo $result['id'] . " : " . $result['name'];
+    echo '<br>';
+}?>
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,57 +37,6 @@
 </head>
 
 <body>
-    <header class="main-padding">
-        <!-- Left part -->
-        <div class="left">
-            <div class="logo">
-                <img src="assets/images/Logo Vault.jpg" alt="Logo" />
-                <span>VAULT</span>
-            </div>            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.php" class="active">Catalogue</a>
-                    </li>
-                    <li>
-
-                        <a class="profile" href="profile.php">Mon profil</a>
-                    </li>
-
-                    <li>
-                        <a class="admin" href="admin.php">Administration</a>
-                    </li>
-
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Right part -->
-        <div class="right">
-            <div class="search_bar">
-                <input type="image" src="assets/images/mag_glass.svg" alt="Loupe">
-                <input type="search" placeholder="Rechercher film, série, jeu...">
-                <span class="shortcut">CTRL+K</span>
-            </div>
-            <div class="exp_lvl">
-                <img src="assets/images/EXP bar.svg" alt="compteur d'expérience">
-                <a id="level" href="#">2</a>
-                <span>
-                    •
-                </span>
-
-                <a id="xp" href="#">135</a>
-            </div>
-
-            <div class="profile">
-                <img src="assets/images/Profile_pic.jpg" alt="compteur d'expérience">
-                <a href="#">Par</a>
-            </div>
-
-        </div>
-    </header>
-
-
 
     <div class="main-padding">
         <div>
@@ -395,92 +366,5 @@ au sein d'un sanctuaire numérique haute fidélité.
 
 
 
-            <!------------------barre de progresseion------------------------->
-
-            
-        <div class="boite-entiere">
-            <div>
-                <div class="pre-title_arrangement">
-                    <img src="assets/images/certified icon.svg" alt="icone de certification">
-                    <span class="pre-title">Architechture web Sprint 1 & 4</span>
-                </div>
-                <h2>Progression de votre Archivage Pop-Culture</h2>
-                <p class="description">Chaque oeuvre annotée enrichit votre rang et consolide la persistance locale de vos résors culturels.</p>
-                
-                <div class="stats">
-                    <div class="nb_oeuvres">
-                        <span>6 / 9</span>
-                        <p>Oeuvre Amorcées</p>
-                    </div>
-                    <div class="note_moy Divider">
-                        <span class="yellow">4.8 / 5</span>
-                        <p>Moyenne notée</p> 
-                    </div>
-                    <div class="exp_won">
-                        <span> +60 XP </span>
-                        <p>Gagnée ce sprint</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="progress">
-                <div class="cercle-de-progression">
-                    <div class="wrapper">
-                       <div class="outerline">
-                            <div class="innerline">
-                                <div id="pourcentage">
-                                    67%
-                                    <span> Indexée</span>
-                                </div>
-                            </div>
-                       </div>
-                    </div>
-                    <svg width="144px" height="144px">
-                        <defs>
-                            <linearGradient id="linearGradient">
-                                <stop offset="0%" stop-color="#D0BCFF"/>
-                                <stop offset="100%" stop-color="#D0BCFF"/>
-                            </linearGradient>
-                        </defs>
-                        <circle cx="72px" cy="72px" r="65px"/>
-                    </svg>
-                </div>
-                <p>Statut Global : Quota Sprint Validé</p>
-            </div>
-        </div>
-    </div>
-
-
-    <footer class="main-padding">
-        <div class="left">
-            <div class="footer_arrangment">
-                <div class="footer_title">
-                    <span class="footer_logo">VAULT</span>
-                    <span>//Plateforme Pop-Culture</span>
-                </div>
-                <div class="footer_subtitle">
-                    <span>Projet Web Bac+1 - 4 Sprints - Architecture native HTML/CSS/PHP/JS</span>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Catalogue</a>
-                    </li>
-                    <li>
-                        <a href="#">Progression</a>
-                    </li>
-                    <li>
-                        <a href="#">Audit & Sprints</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="version">
-                <span>v1.4.0-stable</span>
-            </div>
-        </div>    
-    </footer>
 </body>
 </html>
