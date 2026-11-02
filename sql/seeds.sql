@@ -19,9 +19,9 @@ INSERT INTO medias(category_id, title, release_year, description, image_path) VA
     (2, 'Breaking Bad','2008','...', 'https://images.affiches-et-posters.com//albums/3/3861/medium/3861-poster-serie-tv-breaking-bad.jpg'),
     (2, 'It', '2025', '...','https://club-stephenking.fr/wp-content/uploads/2025/02/it-welcome-to-derry-poster-nouveau-fr-02.webp'),
 
-    (3,'Zelda','2019','...','https://images.affiches-et-posters.com//albums/3/56146/medium/poster-jeu-video-the-legend-zelda-links-awakening-.'),
-    (3, 'God Of War', '2022','...', 'https://static.posters.cz/image/350/affiches-et-posters/playstation-god-of-war-i116582.jpg'),
-    (3, 'God Of War II','2007','...', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVDe5OMPJdM1DOYZ-FrwDTRxNopDd6x_nQ65J3FwpnTO4Z4Qn3R3_cXM&s=10');
+    ('3','Zelda','2019','https://images.affiches-et-posters.com//albums/3/56146/medium/poster-jeu-video-the-legend-zelda-links-awakening-.'),
+    ('3', 'God Of War', '2022', 'https://static.posters.cz/image/350/affiches-et-posters/playstation-god-of-war-i116582.jpg'),
+    ('3', 'God Of War II', '2007', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVDe5OMPJdM1DOYZ-FrwDTRxNopDd6x_nQ65J3FwpnTO4Z4Qn3R3_cXM&s=10'),
 
 INSERT INTO badges(code, name, description) VALUES
     ('1001', 'collector', 'Posséder au moins 5 œuvres dans sa collection personnelle.'),
