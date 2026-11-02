@@ -689,10 +689,6 @@ button {
     font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
     color:#958EA0;
 }
-svg {
-    position: absolute;
-    rotate: -90deg;
-}
 
 circle{
     fill: none;
