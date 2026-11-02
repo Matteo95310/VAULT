@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,15 +25,15 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html" class="active">Catalogue</a>
+                        <a href="index.php" class="active">Catalogue</a>
                     </li>
                     <li>
 
-                        <a class="profile" href="profile.html">Mon profil</a>
+                        <a class="profile" href="profile.php">Mon profil</a>
                     </li>
 
                     <li>
-                        <a class="admin" href="admin.html">Administration</a>
+                        <a class="admin" href="admin.php">Administration</a>
                     </li>
 
                 </ul>
