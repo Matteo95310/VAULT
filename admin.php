@@ -20,8 +20,6 @@
 </head>
 
 <body>
-    
-    
 
   <div class="app">
     <aside class="sidebar">
