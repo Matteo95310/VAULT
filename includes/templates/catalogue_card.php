@@ -1,14 +1,13 @@
 <article class="card">
-    <img src="https://api.cartoonely.com/media/63f880bd27084_unnamed%20(55).png" alt="Image de Men In Black">
+    <img src="<?= $result['image_path']; ?> " alt="Image de <?= $result['title']; ?> ">
 
     <div class="content">
-        <div class="info">1997 • 1h 38m</div>
+        <div class="info"><?= $result['release_year']; ?></div>
 
-        <h2>Men In Black</h2>
+        <h2><?= $result['title']; ?></h2>
 
         <p>
-            Deux agents secrets surveillent les extraterrestres sur Terre et doivent empêcher de détruire la
-            planète.
+            <?= $result['description']; ?>
         </p>
 
         <div class="evaluation">
