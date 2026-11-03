@@ -1,5 +1,5 @@
 <article class="card">
-    <img src="" alt="Image de <?= $result['title']; ?> ">
+    <img src="<?= $result['image_path']; ?> " alt="Image de <?= $result['title']; ?> ">
 
     <div class="content">
         <div class="info"><?= $result['release_year']; ?></div>
