@@ -7,14 +7,15 @@ require 'includes/db.php';
 
 $pdo = getPDO();
 
-$query      = $pdo->query('SELECT * FROM medias ORDER BY title');
+$query      = $pdo->query('SELECT * FROM animaux');
 $results    = $query->fetchAll();
 
-foreach($results as $key => $result) {
-    echo $result['id'] . " : " . $result['title'];
-    echo '<br>';
-}?>
+//print_r($results);
 
+foreach($results as $key => $result) {
+    //echo $result['id'] . " : " . $result['title'];
+    //echo '<br>';
+}?>
 
 
 <head>
@@ -36,7 +37,14 @@ foreach($results as $key => $result) {
     <?php require 'includes/top_body.php'; ?>
 
     <div class="catalogue">
-        <?php require 'includes/catalogue.php'; ?>
+        <?php
+        foreach($results as $key => $result) {
+    //echo $result['id'] . " : " . $result['title'];
+    //echo '<br>';
+            require 'includes/catalogue.php';
+        }?>
+
+        ?>
     </div>
     <div class="main-padding">
         <?php
