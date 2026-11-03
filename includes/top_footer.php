@@ -5,7 +5,8 @@
             <span class="pre-title">Architechture web Sprint 1 & 4</span>
         </div>
         <h2>Progression de votre Archivage Pop-Culture</h2>
-        <p class="description">Chaque oeuvre annotée enrichit votre rang et consolide la persistance locale de vos résors culturels.</p>
+        <p class="description">Chaque oeuvre annotée enrichit votre rang et consolide la persistance locale de vos
+            résors culturels.</p>
 
         <div class="stats">
             <div class="nb_oeuvres">
@@ -47,5 +48,4 @@
         </div>
         <p>Statut Global : Quota Sprint Validé</p>
     </div>
-</div>
 </div>
