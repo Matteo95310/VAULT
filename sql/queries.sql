@@ -28,6 +28,10 @@ les notes absentes ; sans note, le résultat est identifié comme une
 absence de moyenne.
 **************************/
 
+SELECT AVG(UM.rating) as average 
+FROM user_medias as UM
+WHERE UM.user_id = 1;
+
 
 /************************
  Une requête calcule ses XP ; une collection vide donne 0 et le jeu 
