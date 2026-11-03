@@ -5,18 +5,21 @@ body {
 }
 
 .main-padding {
-    padding: 0 64px;
+    padding: 0 32px;
 }
 
 /**********************
 * HEADER
 **********************/
 body header {
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between;
     min-height: 64px;
     background-color: #070910;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 body header .left {
@@ -63,15 +66,17 @@ body header .logo span::after{
     width: 6px;
     background-color: #D0BCFF;
     border-radius: 50%;
-    box-shadow: 0px 0px 8px #D0BCFF;
+    box-shadow: 0 0 8px #D0BCFF;
 }
 
 /***navigation***/
 
 body header nav ul {
     display: flex;
-    gap: 30px;
+    gap: 15px;
     list-style-type: none;
+    font-size: 14px;
+    padding-inline-start: 20px;
 
 }
 
@@ -126,7 +131,7 @@ body header nav a.active {
 
 /***Search bar***/
 
-body header .right .search_bar {
+body .search_bar {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -135,60 +140,14 @@ body header .right .search_bar {
     padding: 4px 16px;
 }
 
-
-.boite-entiere {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: white;
-}
-
-.boite-entiere span.pre-title {
-    color: #FFB95F;
-    font-size: 10px;
-    text-transform: uppercase;
-    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
-}
-
-.boite-entiere h2 {
-    margin: 0;
-    font-size: 22px;
-    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    margin: 5px 0;
-}
-
-.boite-entiere p.description {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.boite-entiere .stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.stat .cercle-de-progression{
-    display: block;
-    gap: 30px;
-    margin-inline: 10px;
-    height: 38px;
-    border: 0;
-    border-radius: 5px;
-}
-
-body header .right .search_bar input[type="search"] {
+body .search_bar input[type="search"] {
     color: #958EA0;
     background-color: #191B22;
     border: none;
     min-width: 256px;
 }
 
-body header .right .search_bar input[type="search"]::placeholder {
+body .search_bar input[type="search"]::placeholder {
     content: "";
     font-size: 12px;
     font-weight: 500;
@@ -260,19 +219,196 @@ body header .right .profile img{
     width: 32px;
     border-radius: 40%;
     background-color: #D0BCFF66;
-    border-radius: 40%;
     padding: 1px 1px;
-    box-shadow: 0px 0px 1px #D0BCFF66;
+    box-shadow: 0 0 1px #D0BCFF66;
 }
-
 /**********************
 * BODY / Block 1
 **********************/
+body div.main-padding{
+    padding: 32px 32px;
+}
 
 
-<!-----------------------essaie----------------------->
+/* ---------------------Prologue----------------------- */
+
+
+body .research_part input[type="search"]::placeholder {
+    content: "";
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    color: #958EA0;
+}
+
+body .main_index{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+}
+
+body .main_index .infos{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+body .main_index .infos .archive{
+    color:#D0BCFF;
+    background-color: #282A30;
+    padding: 2px 8px;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+}
+
+body .main_index .infos .archive::before{
+    content: '';
+    display: block;
+    height: 6px;
+    width: 6px;
+    background-color: #D0BCFF;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+body .main_index .collection_xp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+body .main_index .collection_xp .oeuvre{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+body .main_index .collection_xp .oeuvre img{
+    height: 10.5px;
+    width: 10.5px;
+}
+
+body .main_index .collection_xp .xp_sync{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color:#FFB95F;
+    background-color:#0C0E14;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+body .main_index .collection_xp .xp_sync img{
+    height: 10px;
+    width: 8px;
+}
+
+body .description h1{
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+    background: -webkit-linear-gradient(0deg, rgba(226, 226, 235, 1) 0%, rgba(208, 188, 255, 1) 50%, rgba(255, 185, 95, 1) 100%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body .description .desc{
+    font-size: 16px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight:400;
+    inline-size: auto;
+    max-inline-size: 672px;
+    writing-mode: horizontal-tb;
+    font-style: normal;
+}
+
+/* -----------------------essaie-----------------------*/
+
 * {
     box-sizing: border-box;
+}
+
+body div.research_bar{
+    display: grid;
+    grid-template-columns:5fr 4fr 3fr;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    background-color: #191B22;
+    font-size: 10px;
+}
+
+body .research_bar .search_bar input[type="search"] {
+    color: #958EA0;
+    background-color: transparent;
+    border: none;
+    min-width: 256px;
+}
+
+body .research_bar .search_bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #33343B99;
+    border-radius: 10px;
+    padding: 12px 16px;
+}
+
+body .categories{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    gap:5px;
+    text-transform: uppercase;
+    color:#CBC3D7;
+}
+.category-all{
+    padding: 8px 16px;
+    background-color: #A078FF;
+    border-radius: 4px;
+    color: #340080;
+}
+
+.category-film{
+    padding: 8px 16px;
+    background-color: #282A30;
+    border-radius: 4px;
+}
+
+.category-serie{
+    padding: 8px 16px;
+    background-color: #282A30;
+    border-radius: 4px;
+}
+
+.category-game{
+    padding: 8px 16px;
+    background-color: #282A30;
+    border-radius: 4px;
+}
+
+body .sorting{
+    align-items: end;
+    text-transform: uppercase;
+    color:#958EA0;
+}
+
+.tags{
+    padding: 10px 32px;
+    background-color: #33343B;
+    border-radius: 4px;
+    color:#E2E2EB;
+    text-transform: none;
 }
 
 body {
@@ -323,7 +459,7 @@ h2 {
 p {
     margin: 0;
     color: #c9c5d2;
-    font-size: 13px;
+    font-size: 10px;
     line-height: 1.5;
 }
 
@@ -366,6 +502,17 @@ button {
     .catalogue {
         grid-template-columns: repeat(2, 1fr);
     }
+    body header .right .search_bar {
+        display: none;
+    }
+
+    body footer .left div .footer_subtitle{
+        display: none
+    }
+
+    .main-padding {
+        padding: 0 32px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -375,15 +522,212 @@ button {
 
     .catalogue {
         grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    body header nav{
+        display: none;
+    }
+
+    .main-padding {
+    padding: 0 16px;
+    }
+
+    body footer {
+        justify-content: space-around;
+    }
+
+    body footer .right .version {
+        display: none;
+    }
+
+    body footer .left div{
+        display: none
+    }
+
+}
+
+.boite-entiere {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.boite-entiere div{
+    padding: 3px 0;
+}
+.boite-entiere .pre-title_arrangement{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.boite-entiere .pre-title {
+    color: #FFB95F;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.pre-title img{
+    height: 14px;
+    width: 14.67px;
+}
+
+.boite-entiere h2 {
+    font-size: 22px;
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.boite-entiere p.description {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 553px;
+}
+
+.boite-entiere .stats {
+    display: flex;
+    color: #958EA0;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.boite-entiere .stats div{
+    padding: 3px 20px;
+}
+
+.nb_oeuvres span{
+    font-size: 24px;
+    color: #D2BBFF;
+    letter-spacing: 0;
+}
+
+.note_moy span{
+    font-size: 24px;
+    color: #FFB95F;
+    letter-spacing: 0;
+}
+
+.exp_won span{
+    font-size: 24px;
+    color: #D2BBFF;
+    letter-spacing: 0;
+}
+
+.Divider {
+    border-left:1px solid #33343B; 
+    border-right:1px solid #33343B; 
+    height:40px;
+    position:relative;
+}
+
+.boite-entiere .progress{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 16px 33.75px;
+    background-color: #191B22;
+}
+
+
+.boite-entiere .progress .cercle-de-progression{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.boite-entiere .progress .cercle-de-progression .wrapper {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boite-entiere .progress .cercle-de-progression svg {
+    position: absolute;
+    rotate: -90deg;
+}
+
+.boite-entiere .progress .cercle-de-progression svg circle{
+    position: absolute;
+    fill: none;
+    stroke: url(#linearGradient);
+    stroke-width: 13px;
+    stroke-dasharray: 274.7;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: anim 1s ease forwards;
+}
+
+/*@keyframes anim {
+    100% {
+        stroke-dashoffset: 135,3;
     }
 }
-/**********************
+    pour la semaine 4 avec JS*/
+
+.outerline{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px -1px 5px 0 rgb(51, 52, 59),3px 3px 5px 0 #33343B;
+}
+
+.innerline{
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -1px -1px 5px 0 rgb(51, 52, 59),inset 3px 3px 5px 0 #33343B;
+}
+
+#pourcentage{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 600;
+    color: #E2E2EB;
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+}
+
+#pourcentage span{
+    font-size: 10px;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    color:#958EA0;
+}
+
+
+.boite-entiere .progress p{
+    font-size: 10px;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.25px;
+}
+
+
+    /**********************
 * Footer
 **********************/
 body footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     min-height: 120px;
     background-color: #070910;
 }
@@ -392,6 +736,7 @@ body footer .right nav ul{
     display: flex;
     gap: 30px;
     list-style-type: none;
+    padding: 0 0;
 }
 
 body footer nav a {
@@ -413,18 +758,20 @@ body footer .right{
     align-items: center;
     gap: 30px;
     color: #958EA0;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
 }
 
 body footer .left .footer_arrangment{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:start;
 }
 
 body footer .footer_title {
     display: flex;
     align-items: center;
     gap: 4px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 body footer .left .footer_logo {
@@ -432,13 +779,20 @@ body footer .left .footer_logo {
     gap: 8px;
     align-items: center;
     color: #E2E2EB;
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
 }
 
-body footer .right .version span{
+body footer .footer_subtitle{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+}
+
+body footer .right .version{
     display: flex;
     align-items: center;
     color: #CBC3D7;
-    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
     font-size: 10px;
     font-weight: 600;
     background-color: #191B22;
@@ -452,4 +806,5 @@ body footer .right .version::before{
     width: 8px;
     background-color: #FFB95F;
     border-radius: 50%;
+    margin-right: 8px;
 }

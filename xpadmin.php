@@ -441,5 +441,9 @@
     </div>
 </section>
 
+<<<<<<< HEAD
 </body>
 
+=======
+</body> 
+>>>>>>> master

@@ -1,12 +1,1890 @@
-body #top_profil {
-    background-color:red;
+body {
     display: flex;
-    padding: 40px;
+    flex-direction: column;
+
+
 }
 
 
+body #top_profil {
+    background-color: #191B22;
+    display: flex;
+    padding: 40px;
+    border-radius: 16px;
+    margin: 24px 48px 0px 48px;
+    gap: 40px;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+body #top_profil > *:not(.light) {
+    z-index: 1;
+}
+
+body #top_profil .light {
+    border-radius: 12px;
+    position: absolute;
+    filter: blur(95px);
+}
+
+body #top_profil .light.light_1 {
+    width: 320px;
+    height: 320px;
+    background-color: #FFB95F0D;
+    bottom: -96px;
+    left: 395px;
 
 
-body #top_profil > * {
-    background-color: orange;
+}
+
+body #top_profil .light.light_2 {
+    width: 384px;
+    height: 384px;
+    background-color: #D0BCFF1A;
+    top: -96px;
+    right: -96px;
+
+}
+
+
+body #top_profil .profil_container {
+    display: flex;
+    gap: 24px;
+
+}
+
+body #top_profil .profil_container .photo_profil_container {
+
+    width: 112px;
+    height: 112px;
+    padding: 4px;
+    background: linear-gradient(45deg, #6001D1 0%, #D0BCFF 50%, #FFB95F 100%);
+    border-radius: 16px;
+    box-shadow: 0px 0px 24px 0px #D0BCFF59;
+    position: relative;
+
+}
+
+body #top_profil .profil_container .photo_profil_container .photo_profil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+
+
+}
+
+
+body #top_profil .profil_container .photo_profil_container .status_connected {
+    background-color: #0C0E14;
+    border-radius: 4px;
+    position: absolute;
+    bottom: -10px;
+    right: -9px;
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #FFB95F;
+    padding: 2px 4px;
+}
+
+body #top_profil .profil_container .information_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+
+}
+
+
+body #top_profil .profil_container .information_container .first_line {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+
+}
+
+body #top_profil .profil_container .information_container .first_line .bagde {
+    background-color: #1E1F26;
+    color: #D0BCFF;
+    padding: 2px 8px;
+}
+
+body #top_profil .profil_container .information_container .first_line .description {
+    color: #958EA0;
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+body #top_profil .profil_container .information_container h2 {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+
+
+}
+
+body #top_profil .profil_container .information_container .third_line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+body #top_profil .profil_container .information_container .third_line .pseudo {
+    color: #D2BBFF;
+    font-family: JetBrains Mono;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+body #top_profil .profil_container .information_container .third_line .point {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: #494454;
+    line-height: 20px;
+
+
+}
+
+body #top_profil .profil_container .information_container .third_line .inscription {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #958EA0;
+
+}
+
+body #top_profil .profil_container .information_container .fourth_line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+body #top_profil .profil_container .information_container .fourth_line .badge {
+    background-color: #1E1F26;
+    display: flex;
+    gap: 6px;
+    border-radius: 12px;
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+body #top_profil .xp_level {
+    background-color: #1E1F26;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+    max-width: 576px;
+}
+
+body #top_profil .xp_level .total_xp_level {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+body #top_profil .xp_level .total_xp_level .top_left_container {
+    display: flex;
+    gap: 8px;
+}
+
+
+body #top_profil .xp_level .total_xp_level .top_left_container .logo_flash {
+    background-color: #282A30;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 12px 0px #FFB95F40;
+}
+
+
+body #top_profil .xp_level .total_xp_level .top_left_container .experience_container .experience_total {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #top_profil .xp_level .total_xp_level .top_left_container .experience_container .xp_count {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.6px;
+}
+
+body #top_profil .xp_level .total_xp_level .top_left_container .experience_container .xp_count .color_xp_points {
+    color: #FFB95F;
+    font-family: JetBrains Mono;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+
+
+body #top_profil .xp_level .total_xp_level .palier {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #D0BCFF;
+    text-align: center;
+
+}
+
+
+body #top_profil .xp_level .total_xp_level .palier .type_script {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+
+
+}
+
+
+body #top_profil .xp_level .progress_level {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+body #top_profil .xp_level .progress_level .total_progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body #top_profil .xp_level .progress_level .total_progress .progress_where {
+    font-family: JetBrains Mono;
+    font-weight: 500;
+    font-size: 10px;
+    color: #CBC3D7;
+
+}
+
+body #top_profil .xp_level .progress_level .total_progress .progress_where span {
+    color: #D0BCFF;
+}
+
+
+body #top_profil .xp_level .progress_level .barre_black {
+    background-color: #0C0E14;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 2px;
+}
+
+body #top_profil .xp_level .progress_level .barre_black .barre_fade_color {
+    background: linear-gradient(90deg, #6001D1 0%, #D0BCFF 50%, #FFB95F 100%);
+    border-radius: 12px;
+    height: 8px;
+    width: 40%;
+    box-shadow: 0px 0px 10px 0px #A078FF;
+    transition: all 0.35s ease-in;
+
+}
+
+body #top_profil .xp_level .progress_level .total_progress .percentage_xp {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: #FFB95F;
+
+}
+
+body #top_profil .xp_level .progress_level .progression_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+body #top_profil .xp_level .progress_level .progression_text > p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+
+
+}
+
+body #top_profil .xp_level .bareme_gain {
+    background-color: #0C0E14CC;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+body #top_profil .xp_level .bareme_gain .logo_info_text {
+    display: flex;
+    gap: 4px;
+}
+
+
+body #top_profil .xp_level .bareme_gain .logo_info_text p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.25px;
+    color: #E2E2EB;
+
+}
+
+body #top_profil .xp_level .bareme_gain {
+    display: flex;
+    gap: 8px;
+
+
+}
+
+
+body #top_profil .xp_level .bareme_gain .ajout_xp {
+    display: flex;
+    gap: 8px;
+}
+
+
+body #top_profil .xp_level .bareme_gain .ajout_xp .plus_xp {
+    background-color: #191B22;
+    border-radius: 2px;
+    padding: 6px;
+    flex-grow: 1;
+}
+
+body #top_profil .xp_level .bareme_gain .ajout_xp .plus_xp > p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #CBC3D7;
+}
+
+
+body #top_profil .xp_level .bareme_gain .ajout_xp .plus_xp > p span {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #FFB95F;
+
+}
+
+body #middle_badges {
+    margin: 40px 48px 40px 48px;
+    padding: 16px;
+
+
+}
+
+body #middle_badges .text_register .register_p_container {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1px;
+
+}
+
+body #middle_badges .text_register .second_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body #middle_badges .text_register .second_line .titre {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 22px;
+    color: #E2E2EB;
+
+}
+
+
+body #middle_badges .text_register .second_line .completion {
+    font-family: JetBrains Mono;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+
+body #middle_badges .text_register .second_line .completion span {
+    color: #D0BCFF;
+
+}
+
+body #middle_badges .badges_container {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0px;
+
+
+}
+
+
+body #middle_badges .badges_container .badges_colors_p {
+    background-color: #191B22;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container_logo {
+    background-color: #33343B;
+    border-radius: 8px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 12px 0px #D0BCFF66;
+
+}
+
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container_obtenu {
+    background-color: #D0BCFF33;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px 2px 8px;
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container_obtenu img {
+    width: 10px;
+    height: 10px;
+
+}
+
+
+body #middle_badges .badges_container .badges_colors_p .logo_colors_p .container_obtenu p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #D0BCFF;
+
+}
+
+body #middle_badges .badges_container .collectionneur {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    gap: 4px;
+}
+
+body #middle_badges .badges_container .collectionneur .text_collectionneur {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 18px;
+    color: #E2E2EB;
+}
+
+body #middle_badges .badges_container .collectionneur p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #CBC3D7;
+
+}
+
+body #middle_badges .badges_container .acquisition_p {
+    background-color: #0C0E1499;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 8px 8px;
+
+}
+
+body #middle_badges .badges_container .acquisition_p .condition_texte {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+
+}
+
+body #middle_badges .badges_container .acquisition_p p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+    padding: 0px 31px 0px 0px;
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_o {
+    background-color: #191B22;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container_logo {
+    background-color: #33343B;
+    border-radius: 8px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 12px 0px #FFB95F59;
+
+}
+
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container_obtenu {
+    background-color: #D0BCFF33;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px 2px 8px;
+
+
+}
+
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container_obtenu img {
+    width: 10px;
+    height: 10px;
+
+}
+
+
+body #middle_badges .badges_container .badges_colors_o .logo_colors_o .container_obtenu p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #FFB95F;
+
+}
+
+body #middle_badges .badges_container .acquisition_o {
+    background-color: #0C0E1499;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 8px 8px;
+
+}
+
+body #middle_badges .badges_container .acquisition_o .condition_texte {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+
+}
+
+body #middle_badges .badges_container .acquisition_o p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #FFB95F;
+    padding: 0px 31px 0px 0px;
+
+}
+
+body #middle_badges .badges_container .badges_black_white_g {
+    background-color: #191B2299;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+body #middle_badges .badges_container .badges_black_white_g .logo_mannette {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+
+}
+
+
+body #middle_badges .badges_container .badges_black_white_g .logo_mannette .container_logo {
+    background-color: #1E1F26;
+    border-radius: 8px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body #middle_badges .badges_container .badges_black_white_g .logo_mannette .container_verrouillé {
+    background-color: #D0BCFF33;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px 2px 8px;
+}
+
+
+body #middle_badges .badges_container .badges_black_white_g .logo_mannette .container_verrouillé img {
+    width: 10px;
+    height: 10px;
+}
+
+body #middle_badges .badges_container .badges_black_white_g .logo_mannette .container_verrouillé p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .Gamer {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    gap: 4px;
+}
+
+body #middle_badges .badges_container .Gamer .text_gamer {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 18px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .Gamer p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .progression {
+    background-color: #0C0E1466;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 8px 8px;
+    gap: 6px;
+}
+
+body #middle_badges .badges_container .progression .progression_texte {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .progression p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+
+}
+
+body #middle_badges .badges_container .barre_black_g {
+    background-color: #1E1F26;
+    width: 268px;
+    height: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+body #middle_badges .badges_container .badges_black_white_e {
+    background-color: #191B2299;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+body #middle_badges .badges_container .badges_black_white_e .logo_explo {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+}
+
+body #middle_badges .badges_container .badges_black_white_e .logo_explo .container_logo_e {
+    background-color: #1E1F26;
+    border-radius: 8px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body #middle_badges .badges_container .badges_black_white_e .logo_explo .container_verrouillé {
+    background-color: #D0BCFF33;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px 2px 8px;
+}
+
+body #middle_badges .badges_container .badges_black_white_e .logo_explo .container_verrouillé img {
+    width: 10px;
+    height: 10px;
+}
+
+body #middle_badges .badges_container .badges_black_white_e .logo_explo .container_verrouillé p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .explorateur {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    gap: 4px;
+}
+
+body #middle_badges .badges_container .explorateur .text_explorateur {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 18px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .explorateur p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #958EA0;
+
+}
+
+body #middle_badges .badges_container .best_score {
+    background-color: #0C0E1466;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 8px 8px;
+    gap: 6px;
+}
+
+body #middle_badges .badges_container .best_score .best_score_texte {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #middle_badges .badges_container .best_score p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+body #middle_badges .badges_container .barre_black_e {
+    background-color: #1E1F26;
+    width: 268px;
+    height: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+body #collection_personnelle {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 48px 40px 48px;
+    gap: 16px;
+
+}
+
+body #collection_personnelle .container_top {
+    display: flex;
+    background-color: #191B22;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 30px;
+
+}
+
+body #collection_personnelle .container_top .container_text_collection {
+    background-color: #191B22;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection {
+    background-color: #191B22;
+    margin: 24px 16px;
+}
+
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection .five_oeuvres {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+}
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection .five_oeuvres p {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection .five_oeuvres .cinq_oeuvres {
+    background-color: #A078FF;
+    border-radius: 6px;
+    padding: 2px 8px 2px 8px;
+
+
+}
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection .five_oeuvres .cinq_oeuvres p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #340080;
+
+}
+
+body #collection_personnelle .container_top .container_text_collection .titre_collection .text_equilibre p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #958EA0;
+
+}
+
+body #collection_personnelle .container_top .container_magnette {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    width: 590px;
+    gap: 35px;
+
+
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette {
+    display: flex;
+    gap: 15px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_film {
+    display: flex;
+    align-items: center;
+    background-color: #1E1F26;
+    border-radius: 4px;
+    gap: 8px;
+    padding: 6px 12px 6px 12px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_film img {
+    width: 13px;
+    height: 11px;
+
+
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_film p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_series {
+    display: flex;
+    align-items: center;
+    background-color: #1E1F26;
+    border-radius: 4px;
+    gap: 8px;
+    padding: 6px 12px 6px 12px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_series img {
+    width: 13px;
+    height: 12px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_series p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_moyenne {
+    display: flex;
+    align-items: center;
+    background-color: #1E1F26;
+    border-radius: 4px;
+    gap: 8px;
+    padding: 6px 12px 6px 12px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_moyenne img {
+    width: 13px;
+    height: 13px;
+}
+
+body #collection_personnelle .container_top .container_magnette .three_magnette .magnette_moyenne p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+
+}
+
+body #collection_personnelle .container_top .container_magnette .one_magnette_p .magnette_ajouter {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: #D0BCFF;
+    border-radius: 4px;
+    gap: 8px;
+    padding: 6px 12px 6px 12px;
+
+}
+
+body #collection_personnelle .container_top .container_magnette .one_magnette_p .magnette_ajouter img {
+    width: 8px;
+    height: 8px;
+
+}
+
+body #collection_personnelle .container_top .container_magnette .one_magnette_p .magnette_ajouter p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #3C0091;
+}
+
+body #collection_personnelle .real_catalogue {
+    border-radius: 8px;
+    background-color: #191B22;
+}
+
+
+body #collection_personnelle .real_catalogue .titre_collonne {
+    display: flex;
+    background-color: #33343B99;
+    border-radius: 8px;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .media {
+    width: 88px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .media p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .titre_category {
+    width: 329px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .titre_category p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .status {
+    width: 184px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .status p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .note_attribut {
+    width: 248px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+
+body #collection_personnelle .real_catalogue .titre_collonne .note_attribut p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .valeur_xp {
+    width: 150px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .valeur_xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .actions {
+    width: 184px;
+    height: 28px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+body #collection_personnelle .real_catalogue .titre_collonne .actions p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .first_media {
+    display: flex;
+    align-items: center;
+    height: 104.5px;
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .fisrt_collonne {
+    padding: 12px 16px 12px 16px;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px 12px 31px;
+    justify-content: center;
+    width: 345px;
+    height: 42px;
+
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .titre_film p {
+    font-family: Space Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .c_a_p {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .c_a_p .film {
+    background-color: #1E1F26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .c_a_p .film p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .c_a_p .annee_producteur {
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .first_media .second_collonne .c_a_p .annee_producteur p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .first_media .third_collonne {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 104.5px;
+    padding: 43px 16px 41.5px 16px;
+
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .third_collonne .container_terminer {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 10px 4px 10px;
+    gap: 6px;
+    background-color: #6001D166;
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .third_collonne .container_terminer p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #C9AEFF;
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .fourth_collonne {
+    padding: 0px 0px 0px 15px;
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .fourth_collonne .stars {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .fourth_collonne .stars p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E2E2EB;
+
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .five_collonne {
+    padding: 0px 0px 0px 65px;
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .five_collonne .xp {
+    display: flex;
+    gap: 4px;
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .five_collonne .xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFB95F;
+
+}
+
+body #collection_personnelle .real_catalogue .first_media .six_collonne {
+    padding: 0px 0px 0px 110px;
+}
+
+
+body #collection_personnelle .real_catalogue .first_media .six_collonne .edit {
+    display: flex;
+    gap: 12px;
+}
+
+
+body #collection_personnelle .real_catalogue .second_media {
+    display: flex;
+    align-items: center;
+    height: 104.5px;
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .fisrt_collonne {
+    padding: 12px 16px 12px 16px;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px 12px 31px;
+    justify-content: center;
+    width: 345px;
+    height: 42px;
+
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .titre_film p {
+    font-family: Space Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .c_a_p {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .c_a_p .film {
+    background-color: #1E1F26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .c_a_p .film p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .c_a_p .annee_producteur {
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .second_media .second_collonne .c_a_p .annee_producteur p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .second_media .third_collonne {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 104.5px;
+    padding: 43px 16px 41.5px 16px;
+
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .third_collonne .container_terminer {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 10px 4px 10px;
+    gap: 6px;
+    background-color: #6001D166;
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .third_collonne .container_terminer p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #C9AEFF;
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .fourth_collonne {
+    padding: 0px 0px 0px 15px;
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .fourth_collonne .stars {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .fourth_collonne .stars p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E2E2EB;
+
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .five_collonne {
+    padding: 0px 0px 0px 65px;
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .five_collonne .xp {
+    display: flex;
+    gap: 4px;
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .five_collonne .xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFB95F;
+
+}
+
+body #collection_personnelle .real_catalogue .second_media .six_collonne {
+    padding: 0px 0px 0px 110px;
+}
+
+
+body #collection_personnelle .real_catalogue .second_media .six_collonne .edit {
+    display: flex;
+    gap: 12px;
+}
+
+
+body #collection_personnelle .real_catalogue .third_media {
+    display: flex;
+    align-items: center;
+    height: 104.5px;
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .fisrt_collonne {
+    padding: 12px 16px 12px 16px;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px 12px 31px;
+    justify-content: center;
+    width: 345px;
+    height: 42px;
+
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .titre_film p {
+    font-family: Space Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .c_a_p {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .c_a_p .film {
+    background-color: #1E1F26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .c_a_p .film p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .c_a_p .annee_producteur {
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .third_media .second_collonne .c_a_p .annee_producteur p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .third_media .third_collonne {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 104.5px;
+    padding: 43px 16px 41.5px 16px;
+
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .third_collonne .container_terminer {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 10px 4px 10px;
+    gap: 6px;
+    background-color: #6001D166;
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .third_collonne .container_terminer p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #C9AEFF;
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .fourth_collonne {
+    padding: 0px 0px 0px 15px;
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .fourth_collonne .stars {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .fourth_collonne .stars p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E2E2EB;
+
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .five_collonne {
+    padding: 0px 0px 0px 65px;
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .five_collonne .xp {
+    display: flex;
+    gap: 4px;
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .five_collonne .xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFB95F;
+
+}
+
+body #collection_personnelle .real_catalogue .third_media .six_collonne {
+    padding: 0px 0px 0px 110px;
+}
+
+
+body #collection_personnelle .real_catalogue .third_media .six_collonne .edit {
+    display: flex;
+    gap: 12px;
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media {
+    display: flex;
+    align-items: center;
+    height: 104.5px;
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .fisrt_collonne {
+    padding: 12px 16px 12px 16px;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px 12px 31px;
+    justify-content: center;
+    width: 345px;
+    height: 42px;
+
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .titre_film p {
+    font-family: Space Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .c_a_p {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .c_a_p .film {
+    background-color: #1E1F26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .c_a_p .film p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .c_a_p .annee_producteur {
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .second_collonne .c_a_p .annee_producteur p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .third_collonne {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 104.5px;
+    padding: 43px 16px 41.5px 16px;
+
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .third_collonne .container_terminer {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 10px 4px 10px;
+    gap: 6px;
+    background-color: #33343B;
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .third_collonne .container_terminer p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #CBC3D7;
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .fourth_collonne {
+    padding: 0px 0px 0px 15px;
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .fourth_collonne .stars {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .fourth_collonne .stars p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E2E2EB;
+
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .five_collonne {
+    padding: 0px 0px 0px 65px;
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .five_collonne .xp {
+    display: flex;
+    gap: 4px;
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .five_collonne .xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFB95F;
+
+}
+
+body #collection_personnelle .real_catalogue .fourth_media .six_collonne {
+    padding: 0px 0px 0px 110px;
+}
+
+
+body #collection_personnelle .real_catalogue .fourth_media .six_collonne .edit {
+    display: flex;
+    gap: 12px;
+}
+
+
+body #collection_personnelle .real_catalogue .five_media {
+    display: flex;
+    align-items: center;
+    height: 104.5px;
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .fisrt_collonne {
+    padding: 12px 16px 12px 16px;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px 12px 31px;
+    justify-content: center;
+    width: 345px;
+    height: 42px;
+
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .titre_film p {
+    font-family: Space Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .c_a_p {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .c_a_p .film {
+    background-color: #1E1F26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .c_a_p .film p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 10px;
+    color: #D0BCFF;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .c_a_p .annee_producteur {
+    display: flex;
+    align-items: center;
+}
+
+body #collection_personnelle .real_catalogue .five_media .second_collonne .c_a_p .annee_producteur p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .real_catalogue .five_media .third_collonne {
+    display: flex;
+    align-items: center;
+    width: 184px;
+    height: 104.5px;
+    padding: 43px 16px 41.5px 16px;
+
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .third_collonne .container_terminer {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 10px 4px 10px;
+    gap: 6px;
+    background-color: #33343B;
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .third_collonne .container_terminer p {
+    font-family: JetBrains Mono;
+    font-weight: 600;
+    font-size: 10px;
+    color: #CBC3D7;
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .fourth_collonne {
+    padding: 0px 0px 0px 15px;
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .fourth_collonne .stars {
+    display: flex;
+    gap: 4px;
+    width: 216px;
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .fourth_collonne .stars p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E2E2EB;
+
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .five_collonne {
+    padding: 0px 0px 0px 65px;
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .five_collonne .xp {
+    display: flex;
+    gap: 4px;
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .five_collonne .xp p {
+    font-family: JetBrains Mono;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFB95F;
+
+}
+
+body #collection_personnelle .real_catalogue .five_media .six_collonne {
+    padding: 0px 0px 0px 110px;
+}
+
+
+body #collection_personnelle .real_catalogue .five_media .six_collonne .edit {
+    display: flex;
+    gap: 12px;
+}
+
+
+body #collection_personnelle .bilan {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #191B22;
+}
+
+body #collection_personnelle .bilan .container_left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+body #collection_personnelle .bilan .container_left img {
+    width: 13.5px;
+    height: 12.75px;
+
+}
+
+body #collection_personnelle .bilan .container_left p {
+    font-family: JetBrains Mono;
+    font-weight: 500;
+    font-size: 12px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .bilan .container_left p span {
+    color: #FFB95F;
+}
+
+
+body #collection_personnelle .bilan .container_right {
+    display: flex;
+    gap: 8px;
+}
+
+body #collection_personnelle .bilan .container_right .exportation p {
+    font-family: JetBrains Mono;
+    font-weight: 500;
+    font-size: 12px;
+    color: #958EA0;
+}
+
+body #collection_personnelle .bilan .container_right .container_json {
+    background-color: #1E1F26;
+    border: 2px;
+    padding: 4px 12px 4px 12px;
+
+}
+
+body #collection_personnelle .bilan .container_right .container_json p {
+    font-family: Liberation Mono;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+body #collection_personnelle .bilan .container_right .container_csv {
+    background-color: #1E1F26;
+    border: 2px;
+    padding: 4px 12px 4px 12px;
+}
+
+body #collection_personnelle .bilan .container_right .container_csv p {
+    font-family: Liberation Mono;
+    font-weight: 500;
+    font-size: 12px;
 }

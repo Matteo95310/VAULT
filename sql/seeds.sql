@@ -10,19 +10,18 @@ INSERT INTO categories (name) VALUES
     ('serie'),
     ('jeux video');
 
-
 INSERT INTO medias(category_id, title, release_year, description, image_path) VALUES
-    (1,'Men IN Black', '1997', '...', 'https://api.cartoonely.com/media/63f880bd27084_unnamed%20(55).png'),
-    (1, 'Pulp fiction', '1994', '...', 'https://media.gqmagazine.fr/photos/6081757cb17bbf6a1f1be4eb/master/w_1600%2Cc_limit/71zSZQzlK+L._AC_SL1200_.jpg'),
-    (1,'La La Land', '2016','...', 'https://images.affiches-et-posters.com//albums/3/51042/affiche-film-land.jpg'),
+    (1,'Men IN Black', '1997', 'Deux agents secrets surveillent les extraterrestres sur Terre et doivent empêcher de détruire la planète.', 'https://api.cartoonely.com/media/63f880bd27084_unnamed%20(55).png'),
+    (1, 'Pulp fiction', '1994', 'Plusieurs histoires de criminels à Los Angeles se croisent, entre violence, humour et situations inattendues.', 'https://media.gqmagazine.fr/photos/6081757cb17bbf6a1f1be4eb/master/w_1600%2Cc_limit/71zSZQzlK+L._AC_SL1200_.jpg'),
+    (1,'La La Land', '2016','Une actrice et un musicien tombent amoureux à Los Angeles, tout en essayant de réaliser leurs rêves.', 'https://images.affiches-et-posters.com//albums/3/51042/affiche-film-land.jpg'),
     
-    (2, 'Dexter', '2006','...','https://images.affiches-et-posters.com//albums/3/5010/5010-affiche-serie-tv-dexter.jpg'),
-    (2, 'Breaking Bad','2008','...', 'https://images.affiches-et-posters.com//albums/3/3861/medium/3861-poster-serie-tv-breaking-bad.jpg'),
-    (2, 'It', '2025', '...','https://club-stephenking.fr/wp-content/uploads/2025/02/it-welcome-to-derry-poster-nouveau-fr-02.webp'),
+    (2, 'Dexter', '2006','Dexter Morgan est un expert en médecine légale qui mène une double vie secrète de tueur en série.','https://images.affiches-et-posters.com//albums/3/5010/5010-affiche-serie-tv-dexter.jpg'),
+    (2, 'Breaking Bad','2008','Un professeur de chimie malade se lance dans la fabrication de drogue pour assurer l’avenir de sa famille.', 'https://images.affiches-et-posters.com//albums/3/3861/medium/3861-poster-serie-tv-breaking-bad.jpg'),
+    (2, 'It', '2025', 'À Derry, des habitants affrontent une mystérieuse créature qui terrorise et hante la ville.','https://club-stephenking.fr/wp-content/uploads/2025/02/it-welcome-to-derry-poster-nouveau-fr-02.webp'),
 
-    (3,'Zelda','2019','...','https://images.affiches-et-posters.com//albums/3/56146/medium/poster-jeu-video-the-legend-zelda-links-awakening-.'),
-    (3, 'God Of War', '2022','...', 'https://static.posters.cz/image/350/affiches-et-posters/playstation-god-of-war-i116582.jpg'),
-    (3, 'God Of War II','2007','...', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVDe5OMPJdM1DOYZ-FrwDTRxNopDd6x_nQ65J3FwpnTO4Z4Qn3R3_cXM&s=10');
+    (3,'Zelda','2019',' Link échoue sur une mystérieuse île et doit trouver un moyen de s’échapper en réveillant le Poisson-Rêve.','https://images.affiches-et-posters.com//albums/3/56146/medium/poster-jeu-video-the-legend-zelda-links-awakening-.'),
+    (3, 'God Of War', '2022', 'Kratos et son fils Atreus voyagent à travers les terres nordiques pour répandre les cendres de la mère d’Atreus.','https://static.posters.cz/image/350/affiches-et-posters/playstation-god-of-war-i116582.jpg'),
+    (3, 'God Of War II', '2007', 'Kratos, devenu le nouveau dieu de la guerre, est trahi par Zeus et cherche à se venger de lui.','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVDe5OMPJdM1DOYZ-FrwDTRxNopDd6x_nQ65J3FwpnTO4Z4Qn3R3_cXM&s=10');
 
 INSERT INTO badges(code, name, description) VALUES
     ('1001', 'collector', 'Posséder au moins 5 œuvres dans sa collection personnelle.'),
