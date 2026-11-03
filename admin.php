@@ -19,11 +19,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD:admin.php
-=======
-    
-    
->>>>>>> d01a08a (merged adimin finish):admin.html
 
   <div class="app">
     <aside class="sidebar">
