@@ -4,7 +4,7 @@
     <div class="content">
         <div class="info">1997 • 1h 38m</div>
 
-        <h2>Men In Black</h2>
+        <h2><?php echo $result['nom']; ?></h2>
 
         <p>
             Deux agents secrets surveillent les extraterrestres sur Terre et doivent empêcher de détruire la
