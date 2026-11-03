@@ -1,20 +1,9 @@
+<?php
+    require 'includes/functions_catalogue.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
-
-<?php
-
-require 'includes/db.php';
-
-$pdo = getPDO();
-
-$query      = $pdo->query('SELECT * FROM medias ORDER BY title');
-$results    = $query->fetchAll();
-
-foreach($results as $key => $result) {
-    echo $result['id'] . " : " . $result['title'];
-    echo '<br>';
-}?>
-
 
 
 <head>
@@ -36,7 +25,8 @@ foreach($results as $key => $result) {
     <?php require 'includes/top_body.php'; ?>
 
     <div class="catalogue">
-        <?php require 'includes/catalogue.php'; ?>
+        <?php getCards(); ?>
+
     </div>
     <div class="main-padding">
         <?php
