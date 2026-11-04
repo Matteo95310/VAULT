@@ -55,7 +55,7 @@ else {
     ]);
 //ouverture de la session et redirection vers la page d'accueil
     echo "inscription réussie";
-    session_id(string ($email));
+    session_id($email);
     session_start();
     header('Location: ../../index.php');
     return;

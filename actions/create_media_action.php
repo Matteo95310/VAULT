@@ -25,8 +25,10 @@ else {
     echo "Données manquantes\n";
 }?>
 
-/**************************************************modification d'un medias****************************************/
+
+
 <?php
+/************************************************* MODIFICATION DUN MEDIA ***************************************/
 require_once '../includes/db.php';
 $pdo = getPDO();
 
