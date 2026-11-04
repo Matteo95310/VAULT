@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
-    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
 </head>
 <body>
     <main class="auth-container">
         <section class="auth-card" aria-labelledby="login-title">
             <h1 id="login-title">Connexion</h1>
 
-            <form action="#" method="post">
+            <form action="actions/login_action.php" method="post">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
 
