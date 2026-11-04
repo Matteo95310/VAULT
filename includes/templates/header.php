@@ -42,7 +42,7 @@
 
         <div class="profile">
             <img src="assets/images/Profile_pic.jpg" alt="compteur d'expérience">
-            <a href="#">Par</a>
+            <a href="register.php">Par</a>
         </div>
 
     </div>
