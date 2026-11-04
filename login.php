@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
-    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="/assets/css/auth.css">
 </head>
 <body>
     <main class="auth-container">
@@ -21,7 +21,7 @@
                 <button type="submit">Se connecter</button>
             </form>
 
-            <p>Pas encore de compte ? <a href="register.html">S'inscrire</a></p>
+            <p>Pas encore de compte ? <a href="register.php">S'inscrire</a></p>
         </section>
     </main>
 </body>

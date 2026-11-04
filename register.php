@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
-    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="/assets/css/auth.css">
 </head>
 <body>
     <main class="auth-container">
         <section class="auth-card" aria-labelledby="register-title">
             <h1 id="register-title">Créer un compte</h1>
 
-            <form action="#" method="post">
+            <form action="/includes/user/connexion_settings.php" method="post">
                 <label for="nickname">Pseudo</label>
                 <input type="text" id="nickname" name="nickname" required>
 
@@ -27,7 +27,7 @@
                 <button type="submit">S'inscrire</button>
             </form>
 
-            <p>Déjà inscrit ? <a href="login.html">Se connecter</a></p>
+            <p>Déjà inscrit ? <a href="login.php">Se connecter</a></p>
         </section>
     </main>
 </body>

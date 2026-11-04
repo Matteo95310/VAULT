@@ -1,8 +1,14 @@
+CREATE DATABASE IF NOT EXISTS vault 
+CHARACTER SET utf8mb4 
+COLLATE utf8mb4_general_ci;
+
+USE vault;
+
 CREATE TABLE IF NOT EXISTS users  (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(120) NOT NULL,
     email VARCHAR(190) NOT NULL UNIQUE,
-    password_hash VARCHAR(50) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
     role ENUM('admin', 'client') NOT NULL DEFAULT 'client',
     best_score INT UNSIGNED NOT NULL DEFAULT 0,
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP

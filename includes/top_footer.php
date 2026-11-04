@@ -1,4 +1,4 @@
-<div class="boite-entiere">
+<div class="boite-entiere main-padding">
     <div>
         <div class="pre-title_arrangement">
             <img src="assets/images/certified icon.svg" alt="icone de certification">

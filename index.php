@@ -5,8 +5,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,16 +18,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="main-padding">
+<body >
     <?php require 'includes/templates/header.php'; ?>
 
     <?php require 'includes/top_body.php'; ?>
 
-    <div class="catalogue">
+    <div class="catalogue main-padding">
         <?php getCards(); ?>
 
     </div>
-    <div class="main-padding">
+    <div>
         <?php
         require 'includes/top_footer.php';
         require 'includes/templates/footer.php';
