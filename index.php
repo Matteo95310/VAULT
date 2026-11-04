@@ -21,7 +21,7 @@
 </head>
 
 <body class="main-padding">
-    <?php require 'includes/header.php'; ?>
+    <?php require 'includes/templates/header.php'; ?>
 
     <?php require 'includes/top_body.php'; ?>
 
@@ -32,7 +32,7 @@
     <div class="main-padding">
         <?php
         require 'includes/top_footer.php';
-        require 'includes/footer.php';
+        require 'includes/templates/footer.php';
         ?>
     </div>
 
