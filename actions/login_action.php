@@ -7,6 +7,8 @@ Un visiteur non connecté peut consulter le catalogue, mais toute action personn
 
 <?php
 
+session_start();
+
 require '../includes/db.php';
 
 $email = $_POST['email'] ?? null;
@@ -19,33 +21,18 @@ $query->execute([':email' => $email]);
 $result = $query->fetch();
 
 if(empty($result)) {
-    echo "Le compte existe pas";
+    header('location: ../login.php?erreur=MAIL_INCORRECT');
     return;
 }
 
-var_dump($result);
-die;
-
-if(empty($password_hash === $password_hash)) {
-
-    echo "Mot de passe correct";
+if($passwordHash === $result['password_hash']) {
+    $_SESSION['user_id'] = $result['id'];
+    header('location: ../index.php');
+    
 } else{
-    echo "Mot de passe incorrect";
+    header('location: ../login.php?erreur=PASSWORD_INCORRECT');
+    return;
 }
-
-var_dump($password_hash);
-die;
-
-
-$session = match(true) {
-    $password_hash  => "Nouvelle session",
-    $password_hash => index.php
-    default > => "Echec de connexion"
-};
-echo $session; 
-
-
-
 
 
 echo "=== AJOUTER UN UTILISATEUR ===\n\n"; 
