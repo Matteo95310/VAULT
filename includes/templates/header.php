@@ -18,6 +18,12 @@
                 <li>
                     <a class="admin" href="admin.php">Administration</a>
                 </li>
+                
+                <li>
+                    <form action="actions/logout_action.php" method="POST">
+                        <button type="submit" class="admin">Déconnexion</button>
+                    </form>
+                </li>
 
             </ul>
         </nav>

@@ -27,7 +27,6 @@ session_start();
 
     <div class="catalogue">
         <?php getCards(); ?>
-
     </div>
     <div class="main-padding">
         <?php

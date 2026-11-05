@@ -35,18 +35,11 @@ if($passwordHash === $result['password_hash']) {
 }
 
 
-echo "=== AJOUTER UN UTILISATEUR ===\n\n"; 
- 
-    $email= $_GET['email'] ?? ''; 
-    $password = (int) $_GET['password'] ?? '';
-
    
 // 1. Récupérer la ligne user en BDD à partir de l'adresse email.
 // 2. Vérifier si une ligne est retourné, sinon le mail existe pas.
 // 3. Vérifier si le hash du mot de passe en BDD est le meme que le hash du formulaire.
 // 4. Si oui, on créé une session et on redirige sur index, si non, echec de connexion.
-
-
 
 
 
