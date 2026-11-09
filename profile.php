@@ -23,7 +23,7 @@ require 'includes/db.php';
 $pdo = getPDO();
 
 // user_id vient de la session : on ne voit que SA collection
-$query = $pdo->prepare("SELECT media_id, status, rating FROM user_medias WHERE user_id = ?");
+$query = $pdo->prepare("SELECT medias_id, status, rating FROM user_medias WHERE user_id = ?");
 $query->execute([$_SESSION['user_id']]);
 $collection = $query->fetchAll();
 ?>
