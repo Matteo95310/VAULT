@@ -14,11 +14,11 @@
 
                     <a class="profile" href="profile.php">Mon profil</a>
                 </li>
-                <?php if ( $role === 'admin' ) : ?>
+                <?php if ( ($role ?? null) === 'admin' ) : ?>
                 <li>
                     <a class="admin" href="admin.php">Administration</a>
                 </li>
-                
+                <?php endif; ?>
                 <li>
                     <form action="assets/actions/logout_action.php" method="POST">
                         <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">

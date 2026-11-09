@@ -17,7 +17,7 @@
                 <?php endif; ?>
             </span>
             
-            <form action="/includes/user/login_settings.php" method="post">
+            <form action="actions/login_action.php" method="post">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
 
@@ -30,5 +30,6 @@
             <p>Pas encore de compte ? <a href="register.php">S'inscrire</a></p>
         </section>
     </main>
+<script src="assets/js/function.js"></script>
 </body>
 </html>
