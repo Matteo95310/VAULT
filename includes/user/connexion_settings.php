@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require_once '../db.php';
 
 $pdo = getPDO();
@@ -11,7 +13,7 @@ var_dump($_POST);
 /*****************************Inscription****************************/
 
 //recup des données du formulaire
-$nickname = $_POST['nickname'] ?? '';
+$nickname = trim($_POST['nickname'] ?? '');
 $email = $_POST['email'] ?? '';
 $password = $_POST['password'] ?? '';
 $confirmation = $_POST['password_confirmation'] ?? '';
@@ -29,9 +31,7 @@ $result = $query->fetch();
 
 //verfication des normes du pseudonyme
 if(strlen($nickname) < 3 OR strlen($nickname) > 30 ) {
-    header('Location: ../../register.php');
-    message: 'erreur : Le pseudonyme est invalide.';
-
+    header('Location: ../../register.php?error=Le pseudonyme est invalide');
     return;
 } 
 //verfication si l'email est est utilisé ou non
@@ -53,19 +53,11 @@ else {
         'password_hash' => $password_hash,
         'role' => 'client'
     ]);
-
-// Récupérer l'identifiant du nouvel utilisateur
-$userId = (int) $pdo->lastInsertId();
-
-// Ouvrir la session
-session_start();
-
-// Enregistrer l'utilisateur connecté
-$_SESSION['user_id'] = $userId;
-    
-// Redirection vers la page d'accueil
-   header('Location: ../../index.php');
-exit;
+//ouverture de la session et redirection vers la page d'accueil
+    $_SESSION['user_id'] = $result['id'];
+    header('location: ../../index.php');
+    header('Location: ../../index.php');
+    return;
 }
 
 /*****************************Déconnexion*de*la*session*****************************/

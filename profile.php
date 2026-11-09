@@ -53,54 +53,8 @@ $collection = $query->fetchAll();
 </head>
 
 <body>
-<header class="main-padding">
-    <!-- Left part -->
-    <div class="left">
-        <div class="logo">
-            <img src="assets/images/Logo Vault.jpg" alt="Logo"/>
-            <span>VAULT</span>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.php">Catalogue</a>
-                </li>
-                <li>
-                    <a class="profile active" href="profile.php">Mon profil</a>
-
-                </li>
-                <li>
-                    <a class="admin" href="admin.php">Administration</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Right part -->
-    <div class="right">
-        <div class="search_bar">
-            <input type="image" src="assets/images/mag_glass.svg" alt="Loupe">
-            <input type="search" placeholder="Rechercher film, série, jeu...">
-            <span class="shortcut">CTRL+K</span>
-        </div>
-        <div class="exp_lvl">
-            <img src="assets/images/EXP bar.svg" alt="compteur d'expérience">
-            <a id="level" href="#">
-    <?= (int) $xpData['level'] ?>
-<?php
-echo '<a id="level" href="#">' . (int) $xpData['level'] . '</a>';
-echo '<span>•</span>';
-echo '<a id="xp" href="#">' . (int) $xpData['total_xp'] . '</a>';
-?>
-        </div>
-
-        <div class="profile">
-            <img src="assets/images/Profile_pic.jpg" alt="compteur d'expérience">
-            <a href="#">Par</a>
-        </div>
-
-    </div>
-</header>
+    <?php require 'includes/templates/header.php'; ?>
+    
 <div class="main-padding">
 </div>
 
