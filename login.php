@@ -11,7 +11,13 @@
         <section class="auth-card" aria-labelledby="login-title">
             <h1 id="login-title">Connexion</h1>
 
-            <form action="#" method="post">
+            <span class="error">
+                <?php if (isset($_GET['error'])): ?>
+                    <?= htmlspecialchars($_GET['error']) ?>
+                <?php endif; ?>
+            </span>
+            
+            <form action="/includes/user/login_settings.php" method="post">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
 

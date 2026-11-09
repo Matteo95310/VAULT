@@ -14,11 +14,11 @@
 
                     <a class="profile" href="profile.php">Mon profil</a>
                 </li>
-
+                <?php if ( $role === 'admin' ) : ?>
                 <li>
                     <a class="admin" href="admin.php">Administration</a>
                 </li>
-
+                <?php endif; ?>
             </ul>
         </nav>
     </div>
