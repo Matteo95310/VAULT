@@ -18,6 +18,11 @@
         <div class="buttons">
             <button>Statut : Terminé</button>
             <button>Dans la loge</button>
+            <form method="POST" action="assets/actions/collection_action.php">
+                <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">
+                <input type="hidden" name="media_id" value="<?= (int) $result['id'] ?>">
+                <button type="submit">Ajouter à ma collection</button>
+            </form>
         </div>
     </div>
 </article>

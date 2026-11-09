@@ -1,3 +1,26 @@
+<?php
+session_start();
+
+// Si pas connecté, retour à la connexion
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+
+if (empty($_SESSION['csrf_token'])) { // si on a pas le jeton CSRF, on le fabrique.
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // la fabrication et on le range dans la session
+}
+
+require 'includes/db.php';
+$pdo = getPDO();
+
+// user_id vient de la session : on ne voit que SA collection
+$query = $pdo->prepare("SELECT media_id, status, rating FROM user_medias WHERE user_id = ?");
+$query->execute([$_SESSION['user_id']]);
+$collection = $query->fetchAll();
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>

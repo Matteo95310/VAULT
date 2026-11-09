@@ -20,8 +20,9 @@
                 </li>
                 
                 <li>
-                    <form action="actions/logout_action.php" method="POST">
-                        <button type="submit" class="admin">Déconnexion</button>
+                    <form action="assets/actions/logout_action.php" method="POST">
+                        <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">
+                        <button type="submit" class="admin">Déconnexion</button>  
                     </form>
                 </li>
 
@@ -48,7 +49,7 @@
 
         <div class="profile">
             <img src="assets/images/Profile_pic.jpg" alt="compteur d'expérience">
-            <a href="#">Par</a>
+            <a href="register.php">Par</a>
         </div>
 
     </div>

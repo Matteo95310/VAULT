@@ -11,7 +11,7 @@
         <section class="auth-card" aria-labelledby="login-title">
             <h1 id="login-title">Connexion</h1>
 
-            <form action="actions/login_action.php" method="post">
+            <form action="assets/actions/login_action.php" method="post">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
 
@@ -21,7 +21,7 @@
                 <button type="submit">Se connecter</button>
             </form>
 
-            <p>Pas encore de compte ? <a href="register.html">S'inscrire</a></p>
+            <p>Pas encore de compte ? <a href="register.php">S'inscrire</a></p>
         </section>
     </main>
 </body>

@@ -9,7 +9,7 @@ Un visiteur non connecté peut consulter le catalogue, mais toute action personn
 
 session_start();
 
-require '../includes/db.php';
+require '../../includes/db.php';
 
 $email = $_POST['email'] ?? null;
 $password = $_POST['password'] ?? null;
@@ -20,18 +20,22 @@ $query = $pdo->prepare('SELECT * FROM users WHERE email = :email');
 $query->execute([':email' => $email]);
 $result = $query->fetch();
 
+
+
 if(empty($result)) {
-    header('location: ../login.php?erreur=MAIL_INCORRECT');
-    return;
+    header('location: ../../login.php?erreur=MAIL_INCORRECT');
+return;
 }
+
 
 if($passwordHash === $result['password_hash']) {
     $_SESSION['user_id'] = $result['id'];
-    header('location: ../index.php');
+    header('location: ../../index.php');
     
+
 } else{
-    header('location: ../login.php?erreur=PASSWORD_INCORRECT');
-    return;
+    header('location: ../../login.php?erreur=PASSWORD_INCORRECT');
+return;
 }
 
 

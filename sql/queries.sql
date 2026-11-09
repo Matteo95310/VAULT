@@ -2,7 +2,7 @@
 ● Une requête liste les œuvres d’un utilisateur avec leur titre, leur 
 catégorie, leur statut et leur note.
 ********************/
-
+USE vault;
 
 SELECT M.title, UM.medias_id, UM.status, UM.rating, C.name as category
 FROM user_medias as UM
