@@ -54,9 +54,8 @@ else {
         'role' => 'client'
     ]);
 //ouverture de la session et redirection vers la page d'accueil
-    echo "inscription réussie";
-    session_id($email);
-    session_start();
+    $_SESSION['user_id'] = $result['id'];
+    header('location: ../../index.php');
     header('Location: ../../index.php');
     return;
 }
