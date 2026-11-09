@@ -17,7 +17,7 @@
                 <?php endif; ?>
             </span>
             
-            <form action="/includes/user/login_settings.php" method="post">
+            <form action="asset/actions/login_action" method="post">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
 
