@@ -34,12 +34,16 @@
 ?>
   <div class="app">
     <aside class="sidebar">
-      <div class="brand"><span class="brand-icon">✦</span> VAULT<span class="dot">•</span></div>
+      <div class="brand">
+        <span class="brand-icon">✦</span> 
+        <a href="index.php">VAULT</a>
+        <span class="dot">•</span>
+      </div>
       <p class="eyebrow">SUPERVISION CATALOGUE</p>
       <nav>
         <a class="active" href="#">▦ Console Générale</a>
         <a href="#">▤ Gestion Œuvres</a>
-        <a href="#">♧ Comptes XP</a>
+        <a href="xpadmin.php">♧ Comptes XP</a>
       </nav>
       <div class="status">
         <b>SYSTÈME ACTIF <i></i></b>

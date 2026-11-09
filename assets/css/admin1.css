@@ -51,12 +51,13 @@ button {
 }
 
 .brand {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    font-size: 15px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-weight:800;
+  letter-spacing:2px;
+  font-size:15px;
+  text-decoration: none;
 }
 
 .brand-icon {
@@ -70,6 +71,15 @@ button {
     border: 1px solid #473064;
 }
 
+.brand a{
+  color:#E2E2EB;
+  font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  line-height: 24px;
+  font-size: 18px;
+  text-decoration: none;
+}
 .dot {
     color: var(--purple);
 }

@@ -10,6 +10,13 @@
     <main class="auth-container">
         <section class="auth-card" aria-labelledby="register-title">
             <h1 id="register-title">Créer un compte</h1>
+            <div class="error">
+                <span>
+                    <?php if (isset($_GET['error'])): ?>
+                        <?= htmlspecialchars($_GET['error']) ?>
+                    <?php endif; ?>
+                </span>
+            </div>
 
             <form action="/includes/user/connexion_settings.php" method="post">
                 <label for="nickname">Pseudo</label>
