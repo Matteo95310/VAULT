@@ -15,7 +15,16 @@
 </head>
 
 <body>
+<?php
+    $status = $_GET["status"];
 
+    if($status !== null) {
+        switch ($status) {
+            case 400: echo "Vos données sont invalides"; break;
+        }
+    }
+
+?>
   <div class="app">
     <aside class="sidebar">
       <div class="brand"><span class="brand-icon">✦</span> VAULT<span class="dot">•</span></div>

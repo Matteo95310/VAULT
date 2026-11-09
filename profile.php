@@ -15,28 +15,19 @@ if ($userId === null) {
     exit;
 }
 
-// Récupérer les informations de l'utilisateur
-$requete = $pdo->prepare("
-    SELECT username
-    FROM users
-    WHERE id = :id
-");
-
-$requete->execute(['id' => $userId]);
-$user = $requete->fetch();
-
-if (!$user) {
-    exit("Utilisateur introuvable.");
+if (empty($_SESSION['csrf_token'])) { // si on a pas le jeton CSRF, on le fabrique.
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // la fabrication et on le range dans la session
 }
 
-// Calculer les XP et le niveau
-$xpData = story5GetXpSummary($pdo, (int) $userId);
+require 'includes/db.php';
+$pdo = getPDO();
 
-
-// Synchroniser les badges
-$badgeData = story5SyncUserBadges($pdo, (int) $userId);
-
+// user_id vient de la session : on ne voit que SA collection
+$query = $pdo->prepare("SELECT media_id, status, rating FROM user_medias WHERE user_id = ?");
+$query->execute([$_SESSION['user_id']]);
+$collection = $query->fetchAll();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">

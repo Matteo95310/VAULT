@@ -1,5 +1,17 @@
 <?php
-    require 'includes/functions_catalogue.php';
+session_start();
+
+// Pas connecté : retour à la page de connexion
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+
+require 'includes/functions_catalogue.php';
+
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
 ?>
 
 <!DOCTYPE html>
@@ -18,14 +30,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body >
+<body class="main-padding">
     <?php require 'includes/templates/header.php'; ?>
 
     <?php require 'includes/top_body.php'; ?>
 
     <div class="catalogue main-padding">
         <?php getCards(); ?>
-
     </div>
     <div>
         <?php
