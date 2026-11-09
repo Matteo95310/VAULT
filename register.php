@@ -18,7 +18,7 @@
                 </span>
             </div>
 
-            <form action="/includes/user/connexion_settings.php" method="post">
+            <form action="includes/user/connexion_settings.php" method="post">
                 <label for="nickname">Pseudo</label>
                 <input type="text" id="nickname" name="nickname" required>
 
