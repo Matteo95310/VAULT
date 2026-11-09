@@ -39,23 +39,29 @@
 
         <div>
             <div class="research_bar">
-                <div class="search_bar research_part">
-                    <input type="image" src="assets/images/mag_glass.svg" alt="Loupe">
-                    <input type="search" placeholder="Rechercher une oeuvre...">
-                </div>
+                <form class="filter">
+                    <div class="search_bar ">
+                        <input type="image" src="assets/images/mag_glass.svg" alt="Loupe">
+                        <input type="search" placeholder="Rechercher une oeuvre..." id="medias-search">
+                    </div>
+                </form>
                 <div class="research_part categories">
-                        <span class="category-all">
+                    <input type="radio" name='type' value="category-all" id="Tous" class="category" checked>
+                        <label for="Tous">
                             Tous
-                        </span>
-                    <span class="category-film">
-                            Films (3)
-                        </span>
-                    <span class="category-serie">
+                        </label>
+                    <input type="radio" name='type' value="category-1" id="Films"class="category">
+                     <label for="Films">
+                         Films (3)
+                     </label>
+                    <input type="radio" name='type' value="category-2" id="Series"class="category">
+                    <label for="Series">
                             Séries (3)
-                        </span>
-                    <span class="category-game">
+                        </label>
+                    <input type="radio" name='type' value="category-3" id="Jeux_video"class="category">
+                    <label for="Jeux_video">
                             Jeux (3)
-                        </span>
+                        </label>
                 </div>
                 <div class="sorting">
                         <span>
@@ -66,14 +72,29 @@
                         </span>
                 </div>
             </div>
-            <div>
-                    <span>
 
-                    </span>
-                <span>
-
-                    </span>
-            </div>
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

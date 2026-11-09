@@ -45,6 +45,7 @@ if (empty($_SESSION['csrf_token'])) {
         ?>
     </div>
 
+    <script src="assets/js/catalogue_research.js"></script>
 </body>
 
 </html>
