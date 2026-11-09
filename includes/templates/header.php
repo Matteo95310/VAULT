@@ -18,6 +18,13 @@
                 <li>
                     <a class="admin" href="admin.php">Administration</a>
                 </li>
+                
+                <li>
+                    <form action="assets/actions/logout_action.php" method="POST">
+                        <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">
+                        <button type="submit" class="admin">Déconnexion</button>  
+                    </form>
+                </li>
 
             </ul>
         </nav>
