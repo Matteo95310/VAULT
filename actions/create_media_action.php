@@ -7,7 +7,6 @@ $accepted_files_types=[
         'image/webp'
 ];
 
-
 $pdo = getPDO();
 
 // recupere les info du formulaire
@@ -23,6 +22,7 @@ $synopsis = $_POST['description'];
 $category =  (int) $_POST['type'] ;
 $file= $_FILES['visual_image'];
 
+#Images
 if(!in_array($file['type'], $accepted_files_types)) {
     header("Location: /admin.php?status=400&error=image_invalide");
         die();
@@ -32,8 +32,6 @@ if($file['size'] >= 5 * 1024 * 1024) {
     header("Location: /admin.php?status=400&error=l'image que vous avez upload est trop grande");
     die();
 }
-
-
 
 // ajout des des information dans la DATABASE et ajout du fichier dans le dossier
     $path = __DIR__ . "/../assets/images/carte/".$file['name'];
@@ -45,15 +43,9 @@ if($file['size'] >= 5 * 1024 * 1024) {
         "description" => $synopsis,
         "category" => $category,
         "image_path" => "/assets/images/carte/".$file['name']
-
-
-
-
-
     ]);
     echo "Ajouté ! Nom: $title_film, Annee: $annee, description: $synopsis";
  ?>
-
 
 <!--
 <?php
