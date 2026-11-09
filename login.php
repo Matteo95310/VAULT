@@ -10,7 +10,6 @@
     <main class="auth-container">
         <section class="auth-card" aria-labelledby="login-title">
             <h1 id="login-title">Connexion</h1>
-
             <form action="#" method="post">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>

@@ -53,12 +53,19 @@ else {
         'password_hash' => $password_hash,
         'role' => 'client'
     ]);
-//ouverture de la session et redirection vers la page d'accueil
-    echo "inscription réussie";
-    session_id($email);
-    session_start();
-    header('Location: ../../index.php');
-    return;
+
+// Récupérer l'identifiant du nouvel utilisateur
+$userId = (int) $pdo->lastInsertId();
+
+// Ouvrir la session
+session_start();
+
+// Enregistrer l'utilisateur connecté
+$_SESSION['user_id'] = $userId;
+    
+// Redirection vers la page d'accueil
+   header('Location: ../../index.php');
+exit;
 }
 
 /*****************************Déconnexion*de*la*session*****************************/

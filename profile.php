@@ -1,3 +1,43 @@
+<?php
+
+session_start();
+
+require_once __DIR__ . '/includes/db.php';
+require_once __DIR__ . '/includes/templates/xp_badges.php';
+
+$pdo = getPDO();
+
+// Récupérer l'identifiant de l'utilisateur connecté
+$userId = $_SESSION['user_id'] ?? null;
+
+if ($userId === null) {
+    header('Location: login.php');
+    exit;
+}
+
+// Récupérer les informations de l'utilisateur
+$requete = $pdo->prepare("
+    SELECT username
+    FROM users
+    WHERE id = :id
+");
+
+$requete->execute(['id' => $userId]);
+$user = $requete->fetch();
+
+if (!$user) {
+    exit("Utilisateur introuvable.");
+}
+
+// Calculer les XP et le niveau
+$xpData = story5GetXpSummary($pdo, (int) $userId);
+
+
+// Synchroniser les badges
+$badgeData = story5SyncUserBadges($pdo, (int) $userId);
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -54,12 +94,13 @@
         </div>
         <div class="exp_lvl">
             <img src="assets/images/EXP bar.svg" alt="compteur d'expérience">
-            <a id="level" href="#">2</a>
-            <span>
-                    •
-                </span>
-
-            <a id="xp" href="#">135</a>
+            <a id="level" href="#">
+    <?= (int) $xpData['level'] ?>
+<?php
+echo '<a id="level" href="#">' . (int) $xpData['level'] . '</a>';
+echo '<span>•</span>';
+echo '<a id="xp" href="#">' . (int) $xpData['total_xp'] . '</a>';
+?>
         </div>
 
         <div class="profile">
@@ -141,7 +182,8 @@
                         EXPÉRIENCE TOTALE
                     </p>
                     <p class="xp_count">
-                        135 <span class="color_xp_points"> XP POINTS </span>
+                        <?php echo (int) $xpData['total_xp']; ?>
+                        <span class="color_xp_points"> XP POINTS </span>
                     </p>
 
                 </div>
@@ -149,7 +191,9 @@
             </div>
             <p class="palier">
                 PALIER ACTUEL <br>
-                <span class="type_script"> NIVEAU 2 </span>
+                <span class="type_script"> 
+                    <?php echo (int) $xpData['level']; ?>
+                </span>
             </p>
 
         </div>

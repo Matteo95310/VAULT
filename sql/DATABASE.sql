@@ -72,5 +72,8 @@ CREATE TABLE IF NOT EXISTS user_badges (
     FOREIGN KEY(badge_id)
         REFERENCES badges(id)
         ON DELETE CASCADE
+
+    UNIQUE (user_id, badge_id)
+
 ) ENGINE = InnoDB;
 
