@@ -350,7 +350,7 @@ body .research_bar .search_bar input[type="search"] {
     color: #958EA0;
     background-color: transparent;
     border: none;
-    min-width: 256px;
+    min-width: 95%;
 }
 
 body .research_bar .search_bar {
@@ -360,6 +360,9 @@ body .research_bar .search_bar {
     background-color: #33343B99;
     border-radius: 10px;
     padding: 12px 16px;
+}
+.research_part input {
+    display: none;
 }
 
 body .categories{
@@ -372,30 +375,27 @@ body .categories{
     text-transform: uppercase;
     color:#CBC3D7;
 }
-.category-all{
+
+
+.category + label{
     padding: 8px 16px;
-    background-color: #A078FF;
+    background-color: #282A30;
     border-radius: 4px;
+
+}
+
+.category:checked + label {
+    background-color: #A078FF;
     color: #340080;
 }
 
-.category-film{
+.category + label{
     padding: 8px 16px;
     background-color: #282A30;
     border-radius: 4px;
+
 }
 
-.category-serie{
-    padding: 8px 16px;
-    background-color: #282A30;
-    border-radius: 4px;
-}
-
-.category-game{
-    padding: 8px 16px;
-    background-color: #282A30;
-    border-radius: 4px;
-}
 
 body .sorting{
     align-items: end;

@@ -1,4 +1,4 @@
-<article class="card">
+<article class="card category-<?= $result['category_id']?>" id="cards">
     <img src="<?= $result['image_path']; ?> " alt="Image de <?= $result['title']; ?> ">
 
     <div class="content">
