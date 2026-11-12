@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
-    <link rel="stylesheet" href="/assets/css/auth.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
 </head>
 <body>
     <main class="auth-container">
@@ -18,7 +18,7 @@
                 </span>
             </div>
 
-            <form action="includes/user/connexion_settings.php" method="post">
+            <form id="register-form" action="includes/user/connexion_settings.php" method="post">
                 <label for="nickname">Pseudo</label>
                 <input type="text" id="nickname" name="nickname" required>
 
@@ -37,5 +37,7 @@
             <p>Déjà inscrit ? <a href="login.php">Se connecter</a></p>
         </section>
     </main>
+    <script src="assets/js/annonce.js"></script>
+
 </body>
 </html>

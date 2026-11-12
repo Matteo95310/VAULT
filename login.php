@@ -17,7 +17,7 @@
                 <?php endif; ?>
             </span>
             
-            <form action="actions/login_action.php" method="post">
+            <form id="login-form" action="actions/login_action.php" method="post">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
 
@@ -31,5 +31,7 @@
         </section>
     </main>
 <script src="assets/js/function.js"></script>
+<script src="assets/js/annonce.js"></script>
+
 </body>
 </html>
