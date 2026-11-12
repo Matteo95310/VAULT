@@ -8,10 +8,17 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 require 'includes/functions_catalogue.php';
+$pdo = getPDO();
+$stmt = $pdo->prepare("SELECT role FROM users WHERE id = :id");
+$stmt->execute(['id' => $_SESSION['user_id']]);
+$role = $stmt->fetchColumn();
 
 if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
+
+
+
 ?>
 
 <!DOCTYPE html>

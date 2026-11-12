@@ -1,4 +1,4 @@
-<form action="../../../actions/create_media_action.php" method="post" enctype="multipart/form-data">
+<form id="form-ajout-carte" action="actions/create_media_action.php" method="post" enctype="multipart/form-data">
     <article class="panel editor">
         <div class="toolbar">
             <button class="secondary">⊕ Créer une œuvre</button>

@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: application/json; charset=utf-8');
 require_once '../includes/db.php';
 
 $accepted_files_types=[
@@ -14,8 +15,9 @@ $pdo = getPDO();
 # titre
 $title_film = $_POST['titre'];
 if($title_film === null || strlen($title_film) < 1) {
-    header("Location: /admin.php?status=400&error=titre_invalide");
-    die();
+    http_response_code(400);
+    echo "Erreur : titre invalide";
+exit;
 }
 $annee = (int) $_POST['annee'] ;
 $synopsis = $_POST['description'];
@@ -24,13 +26,15 @@ $file= $_FILES['visual_image'];
 
 #Images
 if(!in_array($file['type'], $accepted_files_types)) {
-    header("Location: /admin.php?status=400&error=image_invalide");
-        die();
+    http_response_code(400);
+    echo "Erreur : image invalide";
+exit;
 }
 
 if($file['size'] >= 5 * 1024 * 1024) {
-    header("Location: /admin.php?status=400&error=l'image que vous avez upload est trop grande");
-    die();
+    http_response_code(400);
+    echo "Erreur : image trop grande";
+exit;
 }
 
 // ajout des des information dans la DATABASE et ajout du fichier dans le dossier
@@ -42,9 +46,18 @@ if($file['size'] >= 5 * 1024 * 1024) {
         "annee" => $annee,
         "description" => $synopsis,
         "category" => $category,
-        "image_path" => "/assets/images/carte/".$file['name']
+        "image_path" => "assets/images/carte/".$file['name']
     ]);
-    echo "Ajouté ! Nom: $title_film, Annee: $annee, description: $synopsis";
+    echo json_encode([
+    'success' => true,
+    'id' => $pdo->lastInsertId(),
+    'titre' => $title_film,
+    'annee' => $annee,
+    'description' => $synopsis,
+    'type' => $category,
+    'image' => "assets/images/carte/" . $file['name']
+]);
+exit;
  ?>
 
 <!--

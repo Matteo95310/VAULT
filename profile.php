@@ -3,7 +3,7 @@
 session_start();
 
 require_once __DIR__ . '/includes/db.php';
-require_once __DIR__ . '/includes/templates/xp_badges.php';
+//require_once __DIR__ . '/includes/templates/xp_badges.php';
 
 $pdo = getPDO();
 
@@ -19,8 +19,7 @@ if (empty($_SESSION['csrf_token'])) { // si on a pas le jeton CSRF, on le fabriq
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // la fabrication et on le range dans la session
 }
 
-require 'includes/db.php';
-$pdo = getPDO();
+
 
 // user_id vient de la session : on ne voit que SA collection
 $query = $pdo->prepare("SELECT medias_id, status, rating FROM user_medias WHERE user_id = ?");
@@ -127,7 +126,7 @@ $collection = $query->fetchAll();
                         EXPÉRIENCE TOTALE
                     </p>
                     <p class="xp_count">
-                        <?php echo (int) $xpData['total_xp']; ?>
+                        <?php echo (int) ($xpData['total_xp'] ?? 0); ?>
                         <span class="color_xp_points"> XP POINTS </span>
                     </p>
 
@@ -137,7 +136,7 @@ $collection = $query->fetchAll();
             <p class="palier">
                 PALIER ACTUEL <br>
                 <span class="type_script"> 
-                    <?php echo (int) $xpData['level']; ?>
+                    <?php echo (int) ($xpData['level'] ?? 1); ?>
                 </span>
             </p>
 

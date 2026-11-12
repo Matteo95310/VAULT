@@ -16,7 +16,7 @@
 
 <body>
 <?php
-    $status = $_GET["status"];
+    $status = $_GET["status"] ?? null;
 
     if($status !== null) {
         switch ($status) {
@@ -126,7 +126,7 @@
                 <th>ACTIONS</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="liste-cartes">
               <tr>
                 <td>#101</td>
                 <td><div class="poster p1">2049</div></td>
@@ -188,5 +188,8 @@
       </footer>
     </main>
   </div>
+
+
+  <script src="assets/js/ajax.js"></script>
 </body>
 </html>
