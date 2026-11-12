@@ -24,18 +24,8 @@ function checkAuthPassword() {
             password.after(error);
         }
 
-// Les formulaires PHP existants seront envoyé via JavaScript (AJAX). 
-// Les retours du formulaire seront traités en JS. Par exemple, à l’ajout d’une carte, celle-ci sera charger dans le DOM sans aucun rechargement de page.
-
-
         else {
-            fetch(form.action, {
-                method: "POST", //Pour envoyer un message au serveur.
-                body: new FormData(form) // Envoie au serveur tout ce que la personne a écrit dans ce formulaire.
-            })
-            .then(res => res.text()) //Quand la réponse arrive.
-            .then(data => console.log("Réponse :", data)) // Ca s'affiche dans la console.
-            .catch(err => console.error(err)); // S'il y a une erreur.
+          form.submit();
         }
   });
 }
@@ -68,25 +58,13 @@ function checkRegisterPassword() {
             password.after(error);
         }
 
-//Les formulaires PHP existants seront envoyé via JavaScript (AJAX). 
-// Les retours du formulaire seront traités en JS. Par exemple, à l’ajout d’une carte, celle-ci sera charger dans le DOM sans aucun rechargement de page.
-
-
         else {
-            fetch(form.action, {
-                method: "POST", //Pour un envoyer un message au serveur.
-                body: new FormData(form) // Envoie au serveur tout ce que la personne a écrit dans ce formulaire.
-            })
-            .then(res => res.text()) //Quand la réponse arrive.
-            .then(data => console.log("Réponse :", data)) // Ca s'affiche dans la console.
-            .catch(err => console.error(err)); // S'il y a une erreur.
+            form.submit();
         }
   });
 }
 checkAuthPassword();
 checkRegisterPassword();
-
-
 
 
 
